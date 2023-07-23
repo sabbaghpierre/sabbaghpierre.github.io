@@ -1,0 +1,161 @@
+:root {
+  --main-background: #222831;
+  --main-card-background: #393e46;
+  --main-fonts-color: #eeeeee;
+  --main-decor-color: #00adb5;
+  /* --main-font-family: 'Poppins', sans-serif; */
+}
+
+.App {
+  background-color: var(--main-background);
+  text-align: center;
+
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.containerView {
+  margin: 10px;
+  width: 400px;
+  overflow: hidden;
+  background-color: var(--main-card-background);
+  border-radius: 11px;
+}
+
+.containerImage {
+  width: 100%;
+
+  aspect-ratio: 16/9;
+  object-fit: fill;
+}
+
+.containerBody {
+  text-align: start;
+  justify-content: space-around;
+  padding: 10px;
+  color: var(--main-fonts-color);
+}
+
+.header {
+  color: var(--main-fonts-color);
+  font-size: 30px;
+}
+
+.button {
+  width: 200px;
+  margin: 15px;
+  font-size: 15px;
+  text-align: center;
+  background-color: var(--main-background);
+  color: white;
+  border: 0px;
+  border-radius: 11px;
+  text-decoration: none;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  color: var(--main-decor-color);
+}
+
+.buttonRow {
+  flex-direction: row;
+  display: flex;
+  text-decoration: none;
+  text-align: start;
+  justify-content: space-around;
+}
+
+.buttonIcon {
+  height: 15px;
+  width: 15px;
+  align-self: center;
+}
+
+.buttonContent {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: space-around;
+}
+
+.footer {
+  color: var(--main-fonts-color);
+  padding: 10px;
+}
+
+.footerLogo {
+  color: var(--main-fonts-color);
+  height: 25px;
+  width: 25px;
+  margin: 5px;
+}
+
+.footerLogo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: var(--main-decor-color);
+}
+
+.navbar {
+  flex-direction: row;
+  display: flex;
+  align-self: center;
+}
+
+.navbarTitle {
+  color: var(--main-fonts-color);
+  font-size: 25px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.navbarTitle:hover {
+  color: var(--main-decor-color);
+  transform: scale(1.1);
+  margin: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbarTitleActive {
+  color: var(--main-decor-color);
+  font-size: 25px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+.technologyIcon {
+  color: white;
+  height: 30px;
+  width: 30px;
+  margin:5px;
+}
+
+@media only screen and (max-width: 1600px) and (min-width: 1150px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 1125px) and (min-width: 550px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .gridContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
