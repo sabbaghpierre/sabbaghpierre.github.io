@@ -54,6 +54,18 @@ const data = [
       "https://play.google.com/store/apps/details?id=com.thewebaddicts.artists_and_more_door_control",
     appStoreLink: "https://apps.apple.com/lb/app/artists-and-more/id1632908576",
   },
+  {
+    id: 5,
+    title: "USA CAB ADS",
+    imageUrl:
+      "https://play-lh.googleusercontent.com/9oLCV9aGGVUhy26LMokSjnoIoujfM2I9r7AG8WOin6os7N1hV0nFyBxNNreyoJZLhzE=w416-h235",
+    description:
+      "USA Cab Ads is a specific tool for our client to monitor and track their current live ads.",
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=com.thewebaddicts.usa_cab_ads_app&hl=en_US&gl=US",
+    appStoreLink:
+      "https://apps.apple.com/gb/app/usa-cab-ads/id6445888428?platform=iphone",
+  },
 ];
 
 export default function HomeView() {

@@ -9,7 +9,8 @@
 .App {
   background-color: var(--main-background);
   text-align: center;
-
+height:100vh;
+justify-content: space-between;
   display: flex;
   flex: 1;
   flex-direction: column;
@@ -89,6 +90,8 @@
 .footer {
   color: var(--main-fonts-color);
   padding: 10px;
+  /* height:100vh;
+  justify-content: space-between; */
 }
 
 .footerLogo {

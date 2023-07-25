@@ -135,6 +135,27 @@ export default function ProjectDetailsView(props) {
       appStoreLink:
         "https://apps.apple.com/lb/app/artists-and-more/id1632908576",
     },
+    {
+      id: 5,
+      title: "USA CAB ADS",
+      technologies: ["flutter", "laravel"],
+      features: ["Mostly built around Google Maps functionality."],
+      screenshots: [
+        "https://play-lh.googleusercontent.com/3ycxUakArKfEQtkvm3LVNFjcDQSXEoML1uPIRrvLu3pZXwrffv80sdbo68Hgs7QjmXTx=w526-h296",
+        "https://play-lh.googleusercontent.com/nMy2OPpHkz9JZcqmXVZ7eHCFsnyv4miag32GPlKaI0344Jhj6g3LRfjTwtDb-LMJ_Hg=w526-h296",
+        "https://play-lh.googleusercontent.com/igxyNMlKkDzDyHp50G9vz1cZjPqoPEgOeUC70eFoHBEFVEeMGj8R0VDOh0q4gwYmYg=w526-h296",
+      ],
+      imageUrl:
+        "https://play-lh.googleusercontent.com/9oLCV9aGGVUhy26LMokSjnoIoujfM2I9r7AG8WOin6os7N1hV0nFyBxNNreyoJZLhzE=w416-h235",
+      shortDescription:
+        "USA Cab Ads is a specific tool for our client to monitor and track their current live ads.",
+      longDescription:
+        "USA Cab Ads is a specific tool for our client to monitor and track their current live ads. We provide a modern and effective outdoor advertising media channel, to our valued clients and agency partners, reflecting a traditional in-motion Out of Home advertising. The App is designed to deliver the most visible taxi Rooftop ad display In NYC data with exceptional service and to generate the most comprehensive campaigns’ reports for our clients.",
+      playStoreLink:
+        "https://play.google.com/store/apps/details?id=com.thewebaddicts.usa_cab_ads_app&hl=en_US&gl=US",
+      appStoreLink:
+        "https://apps.apple.com/gb/app/usa-cab-ads/id6445888428?platform=iphone",
+    },
   ];
 
   function retrieveTechIcon(technology) {
