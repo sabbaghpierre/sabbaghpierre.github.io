@@ -25,7 +25,7 @@ export default function ProjectDetailsView(props) {
         "https://play-lh.googleusercontent.com/6vC9bx1vQMMXEdT48QN3bmXAPFu8ptCq1BwqTjiClAhpuQKURuiYaE_rUARrubmf3ak=w526-h296",
       ],
       imageUrl:
-        "https://urbanbeirut.com/wp-content/uploads/2021/12/cropped-ur79.png",
+        "https://play-lh.googleusercontent.com/6eH-mAvDy5_W1gbfvLVdLfhjNlSJvja27q_HQZLBqz4tppmkhe6I_tmyaJxZnHeUz7HD=w416-h235",
       shortDescription:
         "Furniture Store App built using Flutter with a WooCommerce backend.",
       longDescription:
@@ -78,7 +78,7 @@ export default function ProjectDetailsView(props) {
         "https://play-lh.googleusercontent.com/906A7iuOzeUHV4XV_NuIFBCJdockvTk9__0yHOdjDUxx4Gew6c746ehmnpaCr0Ewwuk=w526-h296",
         "",
       ],
-      imageUrl: "https://targetfoodco.com//images/target-food-logo.png",
+      imageUrl: "https://play-lh.googleusercontent.com/-mXbGUg6rqv7svB6OlkEUXg0fpwhp4P1QDMF1O-pnsNWdJMH_kX24PXXb2xfB0JKNso=w416-h235",
       shortDescription: "Grocery Store App built using Flutter.",
       longDescription:
         "Currently, with economic crisis and life struggles, shopping-from-home or from office setups became a must and more convenient especially that, going out to physically shop in stores is quite challenging and time consuming, so TARGET FOOD providing wide range of quality and value-for-money food to non-food products, from around the world just to your door, becomes ideal. Especially with very special well studied prices respecting daily updates and avoiding instability in rates, economizing unneeded margin struggles.",

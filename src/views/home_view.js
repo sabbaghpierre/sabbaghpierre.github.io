@@ -6,7 +6,7 @@ const data = [
     id: 0,
     title: "Urban Beirut",
     imageUrl:
-      "https://urbanbeirut.com/wp-content/uploads/2021/12/cropped-ur79.png",
+      "https://play-lh.googleusercontent.com/6eH-mAvDy5_W1gbfvLVdLfhjNlSJvja27q_HQZLBqz4tppmkhe6I_tmyaJxZnHeUz7HD=w416-h235",
     description:
       "Furniture Store App built using Flutter with a WooCommerce backend.",
     playStoreLink:
@@ -26,7 +26,7 @@ const data = [
   {
     id: 2,
     title: "Target Food",
-    imageUrl: "https://targetfoodco.com//images/target-food-logo.png",
+    imageUrl: "https://play-lh.googleusercontent.com/-mXbGUg6rqv7svB6OlkEUXg0fpwhp4P1QDMF1O-pnsNWdJMH_kX24PXXb2xfB0JKNso=w416-h235",
     description: "Grocery Store App built using Flutter.",
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.thewebaddicts.targetfood",
@@ -49,7 +49,7 @@ const data = [
     imageUrl:
       "https://play-lh.googleusercontent.com/kRSSiyI7_JPi355Gfs7lSJavPlkFmD0wm3V5Xk4ymvK7rZnYMJAqAFNTW-RAKUVTFQ0=w416-h235",
     description:
-      "Artists & More is the biggest entertainment and show production company in the Middle East providing clients across the globe with astonishing acts serving Weddings, Corporate Events, Malls, Nightclubs, Resorts, Family Events, Festivals, Concerts, Brands & More.",
+      "Artists & More is one of the biggest entertainment and show production company in the Middle East.",
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.thewebaddicts.artists_and_more_door_control",
     appStoreLink: "https://apps.apple.com/lb/app/artists-and-more/id1632908576",

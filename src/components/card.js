@@ -6,9 +6,10 @@ export default function Card(props) {
       <img src={props.imageUrl} alt="logo" className={styles.containerImage} />
       {/* <div style={{ height: 1, backgroundColor: "grey" }} /> */}
       <div className={styles.containerBody}>
-        <h1>{props.title}</h1>
-        <p>{props.description}</p>
-
+        <div style={{ display: "flex", flexDirection: "column",  overflow: 'scroll' }}>
+          <h1>{props.title}</h1>
+          <p style={{height:30}}>{props.description}</p>
+        </div>
         <div className={styles.buttonRow}>
           <a
             href={props.playStoreLink}
