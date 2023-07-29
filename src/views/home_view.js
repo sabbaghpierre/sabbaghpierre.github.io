@@ -1,6 +1,5 @@
-import styles from "../home.module.css";
 import Card from "../components/card";
-import { Link } from "react-router-dom";
+import styles from "../home.module.css";
 const data = [
   {
     id: 0,
@@ -26,7 +25,8 @@ const data = [
   {
     id: 2,
     title: "Target Food",
-    imageUrl: "https://play-lh.googleusercontent.com/-mXbGUg6rqv7svB6OlkEUXg0fpwhp4P1QDMF1O-pnsNWdJMH_kX24PXXb2xfB0JKNso=w416-h235",
+    imageUrl:
+      "https://play-lh.googleusercontent.com/-mXbGUg6rqv7svB6OlkEUXg0fpwhp4P1QDMF1O-pnsNWdJMH_kX24PXXb2xfB0JKNso=w416-h235",
     description: "Grocery Store App built using Flutter.",
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.thewebaddicts.targetfood",
@@ -70,15 +70,14 @@ const data = [
 
 export default function HomeView() {
   const cardsList = data.map((e) => (
-    <Link style={{ textDecoration: "none" }} to={"/project/" + e.id}>
-      <Card
-        title={e.title}
-        imageUrl={e.imageUrl}
-        description={e.description}
-        playStoreLink={e.playStoreLink}
-        appStoreLink={e.appStoreLink}
-      ></Card>
-    </Link>
+    <Card
+      id={e.id}
+      title={e.title}
+      imageUrl={e.imageUrl}
+      description={e.description}
+      playStoreLink={e.playStoreLink}
+      appStoreLink={e.appStoreLink}
+    ></Card>
   ));
 
   return (

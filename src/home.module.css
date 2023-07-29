@@ -166,15 +166,19 @@ body {
   }
 }
 
-@media only screen and (max-width: 1125px) and (min-width: 550px) {
+@media only screen and (max-width: 1325px) and (min-width: 550px) {
   .gridContainer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 880px) {
+
+
   .gridContainer {
+padding:0px;
+align-self: center;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
