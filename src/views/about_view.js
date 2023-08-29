@@ -1,5 +1,7 @@
 import { BiLogoFlutter, BiLogoReact, BiDownload } from "react-icons/bi";
 import Simi from "../assets/images/20220710_220056.jpg";
+import Resume from "../assets/PierreSabbaghResume.docx";
+import styles from "../home.module.css";
 export default function AboutView() {
   return (
     <>
@@ -50,19 +52,21 @@ export default function AboutView() {
         style={{
           width: "50%",
           cursor: "grab",
-          textAlign: "start",
           alignSelf: "center",
-          
         }}
-      >
-        <BiDownload style={{ color: "white",height:45,width:45 }} />
-        <a
-          href="src/assets/PierreSabbaghResume.docx"
-
-          style={{ fontSize: 25, color: "white" }}
-          download
+      >    <a
+            href={Resume}
+            style={{ fontSize: 20, color: "white",textDecoration:'none' }}
+            download="PierreSabbaghResume"
+          >
+        <div
+          className={styles.resume}
         >
-          Resume
+          <BiDownload style={{ color: "white", height: 30, width: 30 }} />
+      
+            Resume
+   
+        </div>
         </a>
       </div>
       <p

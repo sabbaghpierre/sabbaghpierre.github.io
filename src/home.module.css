@@ -159,6 +159,20 @@ body {
   margin: 5px;
 }
 
+.resume {
+  border: 1px solid white;
+  width: 150px;
+  border-radius: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.resume:hover {
+  border: 1px solid red;
+  transform: scale(1.05);
+}
+
 @media only screen and (max-width: 1600px) and (min-width: 1150px) {
   .gridContainer {
     display: grid;

@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes,Navigate } from "react-router-dom";
 import styles from "../src/home.module.css";
 import "./App.css";
 import Footer from "./components/footer";
@@ -14,6 +14,8 @@ function App() {
         <Route path="/" element={<HomeView />} />
         <Route path="/about" element={<AboutView />} />
         <Route path="/project/:id" element={<ProjectDetailsView />} />
+        {/* default redirect to home page */}
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
     </div>
