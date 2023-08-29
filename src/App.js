@@ -14,8 +14,8 @@ function App() {
         <Route path="/" element={<HomeView />} />
         <Route path="/about" element={<AboutView />} />
         <Route path="/project/:id" element={<ProjectDetailsView />} />
-        {/* default redirect to home page */}
-        <Route path="*" element={<Navigate to="/" />} />
+      {/* default redirect to home page */}
+      <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />
     </div>
