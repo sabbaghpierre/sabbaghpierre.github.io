@@ -1,4 +1,4 @@
-import { BiLogoFlutter, BiLogoReact } from "react-icons/bi";
+import { BiLogoFlutter, BiLogoReact, BiDownload } from "react-icons/bi";
 import Simi from "../assets/images/20220710_220056.jpg";
 export default function AboutView() {
   return (
@@ -45,6 +45,25 @@ export default function AboutView() {
             </a>
           </h3>
         </div>
+      </div>
+      <div
+        style={{
+          width: "50%",
+          cursor: "grab",
+          textAlign: "start",
+          alignSelf: "center",
+          
+        }}
+      >
+        <BiDownload style={{ color: "white",height:45,width:45 }} />
+        <a
+          href="src/assets/PierreSabbaghResume.docx"
+
+          style={{ fontSize: 25, color: "white" }}
+          download
+        >
+          Resume
+        </a>
       </div>
       <p
         style={{
