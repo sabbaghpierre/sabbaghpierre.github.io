@@ -1,5 +1,5 @@
 import { BiLogoFlutter, BiLogoReact, BiDownload } from "react-icons/bi";
-import Simi from "../assets/images/20220710_220056.jpg";
+import Simi from "../assets/images/simi.jpg";
 import Resume from "../assets/PierreSabbaghResume.docx";
 import styles from "../home.module.css";
 export default function AboutView() {
