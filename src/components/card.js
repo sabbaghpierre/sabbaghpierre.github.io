@@ -18,7 +18,7 @@ export default function Card(props) {
               style={{
                 display: "flex",
                 flexDirection: "column",
-                overflow: "scroll",
+                overflow: "auto",
               }}
             >
               <h1>{props.title}</h1>
