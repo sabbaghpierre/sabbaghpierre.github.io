@@ -23,6 +23,16 @@ const data = [
     appStoreLink: "https://apps.apple.com/us/app/al-jadeed/id548634879",
   },
   {
+    id: 6,
+    title: "Lebanon 24",
+    imageUrl:
+      "https://play-lh.googleusercontent.com/kxkL07Am-HG_eSzFg2Tp5Xyp3vVmRiBNup2OdLXa5eCqQxdLnHhVWV-QbyH9muL3QQ=w416-h235",
+    description: "Lebanon 24: Objective news around the clock",
+    playStoreLink:
+      "https://play.google.com/store/apps/details?id=mobi.foo.lebanon24iPad&hl=en&gl=US",
+    appStoreLink: "https://apps.apple.com/us/app/al-jadeed/id548634879",
+  },
+  {
     id: 2,
     title: "Target Food",
     imageUrl:
@@ -30,7 +40,7 @@ const data = [
     description: "Grocery Store App built using Flutter.",
     playStoreLink:
       "https://play.google.com/store/apps/details?id=com.thewebaddicts.targetfood",
-    appStoreLink: "https://apps.apple.com/lb/app/target-food/id1629391815",
+    appStoreLink: "https://apps.apple.com/us/app/lebanon-24-%D9%84%D8%A8%D9%86%D8%A7%D9%86-24/id595926843",
   },
   {
     id: 3,

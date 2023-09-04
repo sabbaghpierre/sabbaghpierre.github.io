@@ -64,6 +64,30 @@ export default function ProjectDetailsView(props) {
       appStoreLink: "https://apps.apple.com/us/app/al-jadeed/id548634879",
     },
     {
+      id: 6,
+      title: "Lebanon 24",
+      technologies: ["flutter", "dotnet"],
+      features: [
+        "Push Notifications with proper redirection.",
+        "Ads Integration",
+        "Youtube player integration"
+      ],
+      screenshots: [
+        "https://play-lh.googleusercontent.com/65SqU-4PjOvTjoN-LUpFEV-R0ZQAnMH-CNoEIWzUEfVYW-k3CeMCYMg5UlMCvDZA5w=w526-h296",
+        "https://play-lh.googleusercontent.com/PK-prNMnZW0312vkguQ5HDAAvRXxq-qulU0mhL_Zzg0VbKWCRdOl_7UJEICFe29sMA=w526-h296",
+        "https://play-lh.googleusercontent.com/D9TyDchSdTnNfPiGPPKALu8RqlgKqBbRwzdMGs-ExpOkG8vuqjC08USNnPkQ4qwqGgyZ=w526-h296",
+        "https://play-lh.googleusercontent.com/M5Zc9EEbhDi5XrEH9gEPWAZPUQRBx8_qPw3N99GJuy0CsVwRo74YH9Wrnutk8ZpJePw=w526-h296",
+        "https://play-lh.googleusercontent.com/eMDn6TQQ-qt2ZFZdZxedvL8ieG_7ig0pnJdTmbgQOIlJqPxciSU0Wj7--XzZ5HB9sZM=w526-h296",
+      ],
+      imageUrl:
+        "https://play-lh.googleusercontent.com/kxkL07Am-HG_eSzFg2Tp5Xyp3vVmRiBNup2OdLXa5eCqQxdLnHhVWV-QbyH9muL3QQ=w416-h235",
+      shortDescription: "Lebanon 24: Objective news around the clock",
+      longDescription:"Enjoy a unique and comprehensive news experience with the Lebanon 24 application. Stay up to date with the latest local, regional and global developments through our application, which provides you with credible and objective news around the clock.With the beginning of 2012, Lebanon 24 established itself as a leading source in the world of modern media.\nWe are proud to be your companion on the journey of being informed of important events and news.\nSince then, we have grown into a trusted app that offers you the same quality and reliability on your mobile devices.\nLebanon 24 aims to report facts quickly and objectively. We understand the importance of time in our fast-paced age, which is why we strive to provide you with the latest news as quickly as possible, without compromising on credibility and balance in coverage.\nWith unprecedented reliability, the Lebanon 24 application allows you to follow local, regional and global events from reliable sources. Browse our diverse and in-depth articles, and enjoy a comfortable reading experience that combines text and multimedia.\nNever miss an important detail, we give you instant alerts telling you the latest breaking news. Dive into our live coverage of current events and share your views with your friends and family with easy-to-use sharing features.",
+      playStoreLink:
+        "https://play.google.com/store/apps/details?id=mobi.foo.lebanon24iPad&hl=en&gl=US",
+      appStoreLink: "https://apps.apple.com/us/app/al-jadeed/id548634879",
+    },
+    {
       id: 2,
       title: "Target Food",
       technologies: ["flutter", "laravel"],
