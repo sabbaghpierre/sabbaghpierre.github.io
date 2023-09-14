@@ -80,6 +80,7 @@ body {
 .button:hover {
   cursor: pointer;
   transform: scale(1.1);
+  transition: all 0.25s;
   color: var(--main-decor-color);
 }
 
@@ -140,6 +141,7 @@ body {
 .navbarTitle:hover {
   color: var(--main-decor-color);
   transform: scale(1.1);
+  transition: all 0.25s;
   margin: 10px;
   cursor: pointer;
   text-decoration: none;
@@ -171,6 +173,7 @@ body {
 .resume:hover {
   border: 1px solid red;
   transform: scale(1.05);
+  transition: all 0.25s;
 }
 
 @media only screen and (max-width: 1600px) and (min-width: 1150px) {
