@@ -1,0 +1,140 @@
+{
+  "selectedTemplate": 2,
+  "headings": {
+    "work": "Experience",
+    "skills": "Skills",
+    "education": "Education"
+  },
+  "basics": {
+    "name": "Pierre Sabbagh",
+    "email": "sabbaghpierre@proton.me",
+    "website": "sabbaghpierre.github.io",
+    "location": {
+      "address": "Biaqout, LB"
+    },
+    "phone": "(961) 76 630 992"
+  },
+  "education": [
+    {
+      "institution": "Arab Open University",
+      "location": "Antelias, LB",
+      "area": "Computer Science",
+      "studyType": "BS",
+      "endDate": "2020",
+      "startDate": "2017"
+    },
+    {
+      "institution": "Val Père Jacques",
+      "location": "Bkennaya, LB",
+      "studyType": "LEBANESE BACCALAUREATE CERTIFICATE",
+      "area": "Economics & Sociology",
+      "startDate": "2001",
+      "endDate": "2016"
+    }
+  ],
+  "work": [
+    {
+      "location": "Jdeideh",
+      "position": "Mobile Developer",
+      "website": "",
+      "endDate": "Nov 2024",
+      "highlights": [
+        "Led the complete rewrite of the Al Jadeed native apps to Flutter, featuring news updates, live streaming and episodes video playback,  Google Cast & Apple AirPlay integration, Picture-in-Picture, Banner / IMA Ads, Push Notifications, QR Code login, Caching, Quick Actions and more. Also developed Al Jadeed for tvOS using React Native, and contributed to its implementation on the Tizen platform utilizing web technologies.",
+        "Successfully migrated the Lebanon 24 app from native technologies to a unified Flutter codebase, implementing key features such as banner ads, push notifications, home screen widgets using native code, and efficient caching to enhance performance and user engagement.",
+        "Developed a digital assistance mobile application called Ian Assist, for the insurance company Mideast Assistance featuring support ticket system, live chat, claim submission, and document upload functionalities.",
+        "Rewrote and modernized the Ticketing Box Office app in Flutter, enhancing its appeal and functionality with features such as event browsing, direct booking, ticket scanning at event entrances, and integrated charts.",
+        "Developed the Fujairah TV app from scratch using Flutter, featuring a beautifully designed weather section, episode reminders, and incorporating video player capabilities similar to those in the Al Jadeed app.",
+        "Led the complete rewrite of Aliman TV and Ekher el Akhbar apps from scratch, successfully migrating both to Flutter for enhanced performance and user experience."
+      ],
+      "company": "Softimpact",
+      "startDate": "Jan 2023"
+    },
+    {
+      "highlights": [
+        "Engineered Urban Beirut, a user-centric e-commerce app for purchasing customizable furniture.",
+        "Engineered Beirutic , an e-commerce app for tech products, focusing on user-friendly design and seamless shopping experiences."
+      ],
+      "company": "Fodigi",
+      "position": "Mobile Developer",
+      "location": "Remote",
+      "startDate": "Aug 2021",
+      "endDate": "Present (Contract)"
+    },
+    {
+      "highlights": [
+        "Participated in developing a new internal web platform for employee management using ReactJS and NodeJS."
+      ],
+      "company": "Groupe Vital",
+      "position": "Web Developer",
+      "location": "Remote (Contact)",
+      "startDate": "Mar 2023",
+      "endDate": "Jun 2023"
+    },
+    {
+      "highlights": [
+        "Developed a cinema booking application suite for Iraqi Cinema,  including a desktop POS app, mobile user apps, and kiosk self-checkout app, all using Flutter.",
+        "Created Artist and More, a ticket scanner app for event admissions using Flutter.",
+        "Developed USA Cab Ads, an app for monitoring and analyzing advertisements on NYC cabs, featuring GPS tracking, advanced analytics.",
+        "Designed and launched Target Food, a comprehensive e-commerce grocery app, leveraging Flutter for a seamless, cross-platform shopping experience."
+      ],
+      "company": "TheWebAddicts",
+      "position": "Mobile Developer",
+      "location": "Mirna Chalouhi",
+      "startDate": "Jan 2022",
+      "endDate": "Jan 2023"
+    },
+    {
+      "highlights": [
+        "Contributed to a delivery based app with Google Maps tracking."
+      ],
+      "company": "Behind Pixel",
+      "position": "Junior Mobile Developer",
+      "location": "Hazmieh",
+      "startDate": "Jan 2021",
+      "endDate": "Aug 2021"
+    }
+  ],
+  "skills": [
+    {
+      "level": "",
+      "keywords": [
+        "Flutter & Dart",
+        "React Native & TS/JS",
+        "TV Platforms",
+        "Android & iOS Widgets",
+        "ReactJS"
+      ],
+      "name": "Tools"
+    },
+    {
+      "keywords": [
+        "Arabic (Native)",
+        "English (Professional)",
+        "French (Professional)"
+      ],
+      "name": "Languages"
+    }
+  ],
+  "projects": [
+    {
+      "keywords": [
+        null
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "awarder": "",
+      "summary": ""
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "work",
+    "education",
+    "skills",
+    "projects",
+    "awards"
+  ]
+}
