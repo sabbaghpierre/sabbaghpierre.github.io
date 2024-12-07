@@ -34,17 +34,28 @@
   ],
   "work": [
     {
+      "highlights": [
+        "Lead front-end development, maintaining and enhancing features of domainagents.com and openingsoon.com",
+        "Collaborate with the team to ensure a seamless user experience.",
+        "Optimize web performance and responsiveness across devices."
+      ],
+      "company": "DomainAgents",
+      "position": "Web Developer",
+      "location": "Remote",
+      "startDate": "Nov 2024",
+      "endDate": "Present"
+    },
+    {
       "location": "Jdeideh",
       "position": "Mobile Developer",
       "website": "",
       "endDate": "Nov 2024",
       "highlights": [
-        "Led the complete rewrite of the Al Jadeed native apps to Flutter, featuring news updates, live streaming and episodes video playback,  Google Cast & Apple AirPlay integration, Picture-in-Picture, Banner / IMA Ads, Push Notifications, QR Code login, Caching, Quick Actions and more. Also developed Al Jadeed for tvOS using React Native, and contributed to its implementation on the Tizen platform utilizing web technologies.",
-        "Successfully migrated the Lebanon 24 app from native technologies to a unified Flutter codebase, implementing key features such as banner ads, push notifications, home screen widgets using native code, and efficient caching to enhance performance and user engagement.",
-        "Developed a digital assistance mobile application called Ian Assist, for the insurance company Mideast Assistance featuring support ticket system, live chat, claim submission, and document upload functionalities.",
-        "Rewrote and modernized the Ticketing Box Office app in Flutter, enhancing its appeal and functionality with features such as event browsing, direct booking, ticket scanning at event entrances, and integrated charts.",
-        "Developed the Fujairah TV app from scratch using Flutter, featuring a beautifully designed weather section, episode reminders, and incorporating video player capabilities similar to those in the Al Jadeed app.",
-        "Led the complete rewrite of Aliman TV and Ekher el Akhbar apps from scratch, successfully migrating both to Flutter for enhanced performance and user experience."
+        "Led the complete migration and modernization of several apps to Flutter, including Al Jadeed, Lebanon 24, Aliman TV, and Ekher el Akhbar, integrating advanced features such as news updates, live streaming, episodes video playback, Google Cast & Apple AirPlay support, Picture-in-Picture, Banner/IMA Ads, Push Notifications, QR Code login, Caching, Quick Actions, and performance optimizations.",
+        "Developed Al Jadeed for tvOS using React Native and contributed to its implementation on the Tizen platform with web technologies.",
+        "Developed Ian Assist for Mideast Assistance, featuring support tickets, live chat, claim submissions, and document uploads.",
+        "Rebuilt the Ticketing Box Office app with event browsing, direct booking, ticket scanning, and integrated charts.",
+        "Created the Fujairah TV app from scratch, featuring a weather section, episode reminders, and video player capabilities."
       ],
       "company": "Softimpact",
       "startDate": "Jan 2023"
@@ -72,10 +83,10 @@
     },
     {
       "highlights": [
-        "Developed a cinema booking application suite for Iraqi Cinema,  including a desktop POS app, mobile user apps, and kiosk self-checkout app, all using Flutter.",
-        "Created Artist and More, a ticket scanner app for event admissions using Flutter.",
-        "Developed USA Cab Ads, an app for monitoring and analyzing advertisements on NYC cabs, featuring GPS tracking, advanced analytics.",
-        "Designed and launched Target Food, a comprehensive e-commerce grocery app, leveraging Flutter for a seamless, cross-platform shopping experience."
+        "Developed a cinema booking app suite for Iraqi Cinema, including desktop POS, mobile user apps, and kiosk self-checkout, all built with Flutter.",
+        "Created Artist and More, a ticket scanner app for event admissions, using Flutter.",
+        "Developed USA Cab Ads, an app for monitoring and analyzing NYC cab advertisements, with GPS tracking and advanced analytics.",
+        "Designed and launched Target Food, a comprehensive e-commerce grocery app, using Flutter for a seamless, cross-platform shopping experience."
       ],
       "company": "TheWebAddicts",
       "position": "Mobile Developer",
