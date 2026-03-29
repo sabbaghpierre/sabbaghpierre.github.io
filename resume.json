@@ -35,9 +35,9 @@
   "work": [
     {
       "highlights": [
-        "Lead front-end development, maintaining and enhancing features of domainagents.com and openingsoon.com",
-        "Collaborate with the team to ensure a seamless user experience.",
-        "Optimize web performance and responsiveness across devices."
+        "Lead front-end development, maintaining and enhancing features of domainagents.com and various sub-projects.",
+        "Engineered a custom Dynamic Landing Page Builder from scratch, increasing internal marketing agility.",
+        "Full Stack contribution on the Backend/DevOps side."
       ],
       "company": "DomainAgents",
       "position": "Web Developer",
@@ -51,48 +51,46 @@
       "website": "",
       "endDate": "Nov 2024",
       "highlights": [
-        "Led the complete migration and modernization of several apps to Flutter, including Al Jadeed, Lebanon 24, Aliman TV, and Ekher el Akhbar, integrating advanced features such as news updates, live streaming, episodes video playback, Google Cast & Apple AirPlay support, Picture-in-Picture, Banner/IMA Ads, Push Notifications, QR Code login, Caching, Quick Actions, and performance optimizations.",
-        "Developed Al Jadeed for tvOS using React Native and contributed to its implementation on the Tizen platform with web technologies.",
+        "Led the complete migration and modernization of several apps to Flutter, including top news apps such as Al Jadeed and Lebanon 24, maintaining 24/7 uptime for millions of users during periods of national instability. Additional apps such as Fujairah TV, Aliman TV, and Ekher el Akhbar were also developed, integrating advanced features such as news updates, live streaming, episodes video playback, Google Cast & Apple AirPlay support, Picture-in-Picture, Banner/IMA Ads, Push Notifications, QR Code login, Caching, Quick Actions,Weather Section, Episode Reminders and performance optimizations.",
+        "Led the development of Al Jadeed for tvOS using React Native and contributed to its implementation on the Tizen platform using web technologies.",
         "Developed Ian Assist for Mideast Assistance, featuring support tickets, live chat, claim submissions, and document uploads.",
-        "Rebuilt the Ticketing Box Office app with event browsing, direct booking, ticket scanning, and integrated charts.",
-        "Created the Fujairah TV app from scratch, featuring a weather section, episode reminders, and video player capabilities."
+        "Rebuilt the Ticketing Box Office app from scratch with event browsing, direct booking, ticket scanning, and integrated charts."
       ],
       "company": "Softimpact",
       "startDate": "Jan 2023"
     },
     {
       "highlights": [
-        "Engineered Urban Beirut, a user-centric e-commerce app for purchasing customizable furniture.",
-        "Engineered Beirutic , an e-commerce app for tech products, focusing on user-friendly design and seamless shopping experiences."
-      ],
-      "company": "Fodigi",
-      "position": "Mobile Developer",
-      "location": "Remote",
-      "startDate": "Aug 2021",
-      "endDate": "Present (Contract)"
-    },
-    {
-      "highlights": [
-        "Participated in developing a new internal web platform for employee management using ReactJS and NodeJS."
+        "Contibuted to the development of a new internal web platform for employee management using ReactJS and NodeJS."
       ],
       "company": "Groupe Vital",
       "position": "Web Developer",
-      "location": "Remote (Contact)",
+      "location": "Remote (Contract)",
       "startDate": "Mar 2023",
       "endDate": "Jun 2023"
     },
     {
       "highlights": [
-        "Developed a cinema booking app suite for Iraqi Cinema, including desktop POS, mobile user apps, and kiosk self-checkout, all built with Flutter.",
-        "Created Artist and More, a ticket scanner app for event admissions, using Flutter.",
-        "Developed USA Cab Ads, an app for monitoring and analyzing NYC cab advertisements, with GPS tracking and advanced analytics.",
-        "Designed and launched Target Food, a comprehensive e-commerce grocery app, using Flutter for a seamless, cross-platform shopping experience."
+        "Architected and developed a unified cinema booking ecosystem (POS Desktop, Kiosk, Mobile) for Iraqi Cinema.",
+        "Engineered and launched Target Food, a comprehensive e-commerce grocery app, using Flutter for a seamless shopping experience.",
+        "Created Artist and More, a ticket scanner app for event admissions, using Flutter",
+        "Developed USA Cab Ads, an app for monitoring and analyzing NYC cab advertisements, with GPS tracking and advanced analytics."
       ],
       "company": "TheWebAddicts",
       "position": "Mobile Developer",
       "location": "Mirna Chalouhi",
       "startDate": "Jan 2022",
       "endDate": "Jan 2023"
+    },
+    {
+      "highlights": [
+        "Engineered Urban Beirut and Beirutic, user-centric e-commerce apps for purchasing customizable furniture & tech products, focusing on user-friendly design and seamless shopping experiences."
+      ],
+      "company": "Fodigi",
+      "position": "Mobile Developer",
+      "location": "Dekwaneh",
+      "startDate": "Aug 2021",
+      "endDate": "Dec 2021"
     },
     {
       "highlights": [
@@ -109,13 +107,28 @@
     {
       "level": "",
       "keywords": [
-        "Flutter & Dart",
-        "React Native & TS/JS",
-        "TV Platforms",
-        "Android & iOS Widgets",
-        "ReactJS"
+        "Flutter",
+        "Angular",
+        "React Native",
+        "tvOS & Tizen",
+        "go",
+        "MySQL",
+        ""
       ],
-      "name": "Tools"
+      "name": "Stack"
+    },
+    {
+      "keywords": [
+        "Claude Code",
+        "MCP",
+        "Firebase",
+        "CI/CD",
+        "Docker",
+        "K8s",
+        "Cloudflare",
+        "App/Play Store Deployments"
+      ],
+      "name": "AI & DevOps"
     },
     {
       "keywords": [
@@ -135,16 +148,15 @@
   ],
   "awards": [
     {
-      "awarder": "",
-      "summary": ""
+      "awarder": ""
     }
   ],
   "sections": [
     "templates",
     "profile",
     "work",
-    "education",
     "skills",
+    "education",
     "projects",
     "awards"
   ]
