@@ -1,60 +1,932 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel=“shortcut icon” href=“favicon.ico” type=“image/x-icon”>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pierre Sabbagh — Senior Mobile & Web Developer specializing in Flutter, React Native, and Angular. Building performant apps used by millions.">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
-    <title>Pierre Sabbagh</title>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <title>Pierre Sabbagh — Mobile & Web Developer</title>
 </head>
-
 <body>
 
-    <div>
-        <h1 class="greeting-title">Hi!</h1>
-        <p>I'm Pierre, a Software Developer from Lebanon.</p>
-        <p>I enjoy building
-            performant, usable, and beautiful experiences for mobile & web.</p>
-        <p>For mobile, I mainly work with cross platform technologies, such as <a class="link"  target="_blank" href="https://flutter.dev">Flutter</a> and <a  class="link" target="_blank" href="https://reactnative.dev">React Native.</a></p>
-        <p>For web, I mainly work with <a class="link"  target="_blank" href="https://angular.dev">Angular</a>.
-        <p>For the backend, I love using solutions such as <a class="link" target="_blank" href="https://pocketbase.io">Pocketbase.</a></p>
-        <p>I love everything FOSS, and I try to contibute as much as I can.</p>
-        <div class="row large-gap">
-            <div class="row">
-                <div class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="#ffffff">
-                        <path
-                            d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
-                    </svg>
-                </div>
-                <div class="link"><a target="_blank" href="https://github.com/sabbaghpierre">Github</a></div>
-            </div>
-            <div class="row">
-                <div class="icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" fill="#ffffff">
-                        <path
-                            d="M320 464c8.8 0 16-7.2 16-16V160H256c-17.7 0-32-14.3-32-32V48H64c-8.8 0-16 7.2-16 16V448c0 8.8 7.2 16 16 16H320zM0 64C0 28.7 28.7 0 64 0H229.5c17 0 33.3 6.7 45.3 18.7l90.5 90.5c12 12 18.7 28.3 18.7 45.3V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64z" />
-                    </svg>
-                </div>
-                <div class="link"> <a href="resume.pdf" download="resume">
+  <!-- ───── NAV ───── -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Pierre Sabbagh — home">PS</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#skills"     class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects"   class="nav-link">Projects</a></li>
+        <li><a href="#contact"    class="nav-link">Contact</a></li>
+      </ul>
+      <button class="btn-term-toggle" id="termToggle" aria-label="Open terminal mode" aria-expanded="false">&gt;_</button>
+      <a href="resume.pdf" download="Pierre_Sabbagh_Resume" class="btn btn-outline nav-cta" aria-label="Download resume PDF">Resume</a>
+    </div>
+  </nav>
 
-
-
-                        Resume
-
-
-                    </a>
-                </div>
-            </div>
+  <!-- ───── TERMINAL OVERLAY ───── -->
+  <div id="termOverlay" class="term-overlay" role="dialog" aria-modal="true" aria-label="Portfolio terminal" aria-hidden="true">
+    <div class="term-overlay-inner">
+      <div class="term-bar">
+        <div class="term-dots" aria-hidden="true">
+          <span class="term-dot tdot-red"></span>
+          <span class="term-dot tdot-yellow"></span>
+          <span class="term-dot tdot-green"></span>
         </div>
+        <span class="term-titlebar">pierre@portfolio — ~</span>
+        <button class="term-esc-btn" id="termClose" aria-label="Close terminal (Escape)">esc</button>
+      </div>
+      <div class="term-body" id="termBody" aria-live="polite" aria-label="Terminal output"></div>
+      <div class="term-input-line">
+        <span class="term-prompt-label" aria-hidden="true">pierre@portfolio:~$&nbsp;</span>
+        <input
+          type="text"
+          id="termInput"
+          class="term-input"
+          autocomplete="off"
+          autocorrect="off"
+          autocapitalize="off"
+          spellcheck="false"
+          aria-label="Terminal command input"
+        >
+      </div>
+    </div>
+  </div>
 
+  <!-- ───── HERO ───── -->
+  <section id="hero" class="hero" aria-label="Introduction">
+    <div class="hero-bg-grid" aria-hidden="true"></div>
+    <div class="hero-glow"    aria-hidden="true"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge reveal">
+        <span class="badge-dot" aria-hidden="true"></span>
+        Available for work
+      </div>
+
+      <h1 class="hero-name reveal">
+        Pierre <span class="accent">Sabbagh</span>
+      </h1>
+
+      <p class="hero-role reveal" aria-label="Role">
+        <span class="typed-text" aria-live="polite"></span><span class="cursor" aria-hidden="true">|</span>
+      </p>
+
+      <p class="hero-desc reveal">
+        Senior Mobile &amp; Web Developer building performant, beautiful experiences across Flutter, React Native &amp; Angular — from app stores to production web, for users at scale.
+      </p>
+
+      <div class="hero-actions reveal">
+        <a href="#experience" class="btn btn-primary">View Experience</a>
+        <a href="https://github.com/sabbaghpierre" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 496 512" fill="currentColor" aria-hidden="true">
+            <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"/>
+          </svg>
+          GitHub
+        </a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num accent">5+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num accent">15+</span>
+          <span class="stat-label">Apps Shipped</span>
+        </div>
+        <div class="stat-divider" aria-hidden="true"></div>
+        <div class="stat">
+          <span class="stat-num accent">1M+</span>
+          <span class="stat-label">Users Reached</span>
+        </div>
+      </div>
     </div>
 
+    <div class="scroll-indicator" aria-hidden="true">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
 
+  <!-- ───── SKILLS ───── -->
+  <section id="skills" class="section" aria-label="Skills and Tech Stack">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Expertise</span>
+        <h2 class="section-title">Tech Stack</h2>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card glass reveal">
+          <div class="skill-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg>
+          </div>
+          <h3 class="skill-card-title">Stack</h3>
+          <div class="skill-pills">
+            <span class="pill">Flutter</span>
+            <span class="pill">Angular</span>
+            <span class="pill">React Native</span>
+            <span class="pill">React</span>
+            <span class="pill">Node.js</span>
+            <span class="pill">iOS &amp; Android</span>
+            <span class="pill">tvOS &amp; Tizen</span>
+            <span class="pill">Go</span>
+            <span class="pill">MySQL</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+          </div>
+          <h3 class="skill-card-title">AI &amp; DevOps</h3>
+          <div class="skill-pills">
+            <span class="pill">Claude Code</span>
+            <span class="pill">MCP</span>
+            <span class="pill">Firebase</span>
+            <span class="pill">CI/CD</span>
+            <span class="pill">Docker</span>
+            <span class="pill">K8s</span>
+            <span class="pill">Cloudflare</span>
+            <span class="pill">App/Play Store</span>
+          </div>
+        </div>
+
+        <div class="skill-card glass reveal">
+          <div class="skill-card-icon" aria-hidden="true">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3 class="skill-card-title">Languages</h3>
+          <div class="skill-pills">
+            <span class="pill">Arabic <small>(Native)</small></span>
+            <span class="pill">English <small>(Professional)</small></span>
+            <span class="pill">French <small>(Professional)</small></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── EXPERIENCE ───── -->
+  <section id="experience" class="section" aria-label="Work Experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Career</span>
+        <h2 class="section-title">Experience</h2>
+      </div>
+
+      <div class="timeline" role="list">
+
+        <!-- DomainAgents -->
+        <article class="timeline-item reveal" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">DomainAgents</h3>
+                <span class="timeline-role">Web Developer</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Nov 2024 – Present</span>
+                <span class="timeline-location">Remote</span>
+                <span class="badge-current">Current</span>
+              </div>
+            </div>
+            <ul class="timeline-highlights">
+              <li>Lead front-end development, maintaining and enhancing features of domainagents.com and various sub-projects.</li>
+              <li>Engineered a custom Dynamic Landing Page Builder from scratch, increasing internal marketing agility.</li>
+              <li>Full Stack contribution on the Backend/DevOps side.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Angular</span>
+              <span class="tag">Full Stack</span>
+              <span class="tag">DevOps</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Adrea -->
+        <article class="timeline-item reveal" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">Adrea</h3>
+                <span class="timeline-role">Mobile Developer</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Jan 2025 – Present</span>
+                <span class="timeline-location">Remote (Contract)</span>
+                <span class="badge-current">Current</span>
+              </div>
+            </div>
+            <ul class="timeline-highlights">
+              <li>Lead mobile development of the Adrea app — a comprehensive equestrian facility management platform with live video feed, push notifications, horse medical records, and data analytics driven by AI oversight.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">AI</span>
+              <span class="tag">Live Streaming</span>
+              <span class="tag">Push Notifications</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Softimpact -->
+        <article class="timeline-item reveal" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">Softimpact</h3>
+                <span class="timeline-role">Mobile Developer</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Jan 2023 – Nov 2024</span>
+                <span class="timeline-location">Jdeideh</span>
+              </div>
+            </div>
+            <ul class="timeline-highlights">
+              <li>Led migration of top news apps to Flutter — Al Jadeed and Lebanon 24 — maintaining 24/7 uptime for millions of users during national instability. Also built Fujairah TV, Aliman TV, and Ekher el Akhbar with live streaming, Google Cast &amp; AirPlay, PiP, IMA Ads, QR Code login, and more.</li>
+              <li>Led Al Jadeed for tvOS in React Native and contributed to its Tizen implementation using web technologies.</li>
+              <li>Developed Ian Assist (Mideast Assistance) with support tickets, live chat, claim submissions &amp; document uploads.</li>
+              <li>Rebuilt the Ticketing Box Office app with event browsing, direct booking, ticket scanning, and integrated charts.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">React Native</span>
+              <span class="tag">tvOS</span>
+              <span class="tag">Tizen</span>
+              <span class="tag">Live Streaming</span>
+              <span class="tag">Google Cast</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Early Career -->
+        <article class="timeline-item reveal" role="listitem">
+          <div class="timeline-dot" aria-hidden="true"></div>
+          <div class="timeline-card glass">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-company">Early Career</h3>
+                <span class="timeline-role">Mobile Developer — TheWebAddicts · Fodigi · Behind Pixel</span>
+              </div>
+              <div class="timeline-meta">
+                <span class="timeline-date">Jan 2021 – Jan 2023</span>
+                <span class="timeline-location">Lebanon</span>
+              </div>
+            </div>
+            <ul class="timeline-highlights">
+              <li>Architected a unified cinema booking ecosystem (POS Desktop, Kiosk, Mobile) for Iraqi Cinema; shipped Target Food, Artist and More, and USA Cab Ads with GPS tracking and analytics.</li>
+              <li>Built e-commerce apps (Urban Beirut, Beirutic) and a real-time delivery tracking app with Google Maps integration.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span class="tag">Flutter</span>
+              <span class="tag">E-commerce</span>
+              <span class="tag">GPS &amp; Maps</span>
+              <span class="tag">Analytics</span>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── PROJECTS ───── -->
+  <section id="projects" class="section" aria-label="Featured Projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <!-- SVG shortcuts -->
+      <svg style="display:none" aria-hidden="true">
+        <symbol id="ico-play" viewBox="0 0 512 512" fill="currentColor"><path d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.6 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c17.1-9.9 17.1-35 0-44.9l-1.2-.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></symbol>
+        <symbol id="ico-apple" viewBox="0 0 384 512" fill="currentColor"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></symbol>
+        <symbol id="ico-web" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></symbol>
+      </svg>
+
+      <div class="projects-grid">
+
+        <!-- Al Jadeed -->
+        <article class="project-card glass reveal">
+          <div class="project-header">
+            <img class="project-icon" src="https://play-lh.googleusercontent.com/ReFFJhnXvO9OzTmH9VukFQzJxxgZhPD-NXBD5HL3HvJ90H7RMseOXc7LAETb0cjr3A=w120-h120" alt="Al Jadeed app icon" loading="lazy" width="56" height="56">
+            <div>
+              <h3 class="project-name">Al Jadeed</h3>
+              <div class="project-platforms">
+                <span class="platform-badge">iOS</span><span class="platform-badge">Android</span><span class="platform-badge">tvOS</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">Leading Lebanese news app rebuilt in Flutter — live streaming, Google Cast &amp; AirPlay, PiP, IMA Ads, QR Code login, and Push Notifications for millions of daily users.</p>
+          <div class="project-tags"><span class="tag">Flutter</span><span class="tag">Live Streaming</span><span class="tag">Google Cast</span></div>
+          <div class="project-links">
+            <a href="https://play.google.com/store/apps/details?id=mobi.foo.aljadeed" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-play"/></svg>Play Store</a>
+            <a href="https://apps.apple.com/us/app/al-jadeed/id548634879" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-apple"/></svg>App Store</a>
+          </div>
+        </article>
+
+        <!-- Adrea -->
+        <article class="project-card glass reveal">
+          <div class="project-header">
+            <img class="project-icon" src="https://play-lh.googleusercontent.com/GIXOPsIwCMz2TgqzGTHYAdnW_t2wRYBdEZEE2V0B5iMkgNbcuIggOG3xKAgDtc0VTZKL-EWPJx9s5YpKNLfPWdc=w120-h120" alt="Adrea app icon" loading="lazy" width="56" height="56">
+            <div>
+              <h3 class="project-name">Adrea</h3>
+              <div class="project-platforms">
+                <span class="platform-badge">iOS</span><span class="platform-badge">Android</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">Equestrian facility management platform — live video feed, AI-driven health analytics, horse medical records, push notifications, and daily operations oversight.</p>
+          <div class="project-tags"><span class="tag">Flutter</span><span class="tag">AI</span><span class="tag">Live Video</span></div>
+          <div class="project-links">
+            <a href="https://play.google.com/store/apps/details?id=ae.adrea.app" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-play"/></svg>Play Store</a>
+            <a href="https://apps.apple.com/ca/app/adrea/id6758053445" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-apple"/></svg>App Store</a>
+          </div>
+        </article>
+
+        <!-- Urban Beirut -->
+        <article class="project-card glass reveal">
+          <div class="project-header">
+            <img class="project-icon" src="https://play-lh.googleusercontent.com/Nk60R9EnjCX97tTtUuqVKP8A_wbKBZNHrWangkbq1wN42HxgbbPO0xndQUaIwIPj2zk=w120-h120" alt="Urban Beirut app icon" loading="lazy" width="56" height="56">
+            <div>
+              <h3 class="project-name">Urban Beirut</h3>
+              <div class="project-platforms">
+                <span class="platform-badge">iOS</span><span class="platform-badge">Android</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">E-commerce app for purchasing customizable furniture with a seamless, user-centric shopping experience built with Flutter.</p>
+          <div class="project-tags"><span class="tag">Flutter</span><span class="tag">E-commerce</span><span class="tag">Furniture</span></div>
+          <div class="project-links">
+            <a href="https://play.google.com/store/apps/details?id=com.fodigi.urbanbeirut" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-play"/></svg>Play Store</a>
+            <a href="https://apps.apple.com/us/app/urban-beirut/id1622005589" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-apple"/></svg>App Store</a>
+          </div>
+        </article>
+
+        <!-- Beirutic -->
+        <article class="project-card glass reveal">
+          <div class="project-header">
+            <img class="project-icon" src="https://play-lh.googleusercontent.com/ulef_K3Uu7_k1uXN1eimCdIoqDCEe-P_FaPwuejs3D0AmhLcV1Z_m2ruUcxGBMgDrtY=w120-h120" alt="Beirutic app icon" loading="lazy" width="56" height="56">
+            <div>
+              <h3 class="project-name">Beirutic</h3>
+              <div class="project-platforms">
+                <span class="platform-badge">iOS</span><span class="platform-badge">Android</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">E-commerce app for purchasing tech products and appliances with smooth browsing, filtering, and a seamless purchase flow built with Flutter.</p>
+          <div class="project-tags"><span class="tag">Flutter</span><span class="tag">E-commerce</span><span class="tag">Tech Products</span></div>
+          <div class="project-links">
+            <a href="https://play.google.com/store/apps/details?id=com.fodigi.beirutic" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-play"/></svg>Play Store</a>
+            <a href="https://apps.apple.com/us/app/beirutic/id6480465383" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-apple"/></svg>App Store</a>
+          </div>
+        </article>
+
+        <!-- Lebanon 24 -->
+        <article class="project-card glass reveal">
+          <div class="project-header">
+            <img class="project-icon" src="https://play-lh.googleusercontent.com/JhR2vPoauftbRuKA5QqgbUiFk9J8Zom_ug3vT1mrLkSSFyI99tE_aUPVpgMEiRq_340=w120-h120" alt="Lebanon 24 app icon" loading="lazy" width="56" height="56">
+            <div>
+              <h3 class="project-name">Lebanon 24</h3>
+              <div class="project-platforms">
+                <span class="platform-badge">iOS</span><span class="platform-badge">Android</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">Top Lebanese digital news platform migrated to Flutter — real-time alerts, live coverage, and seamless multimedia experience for millions of readers.</p>
+          <div class="project-tags"><span class="tag">Flutter</span><span class="tag">Push Notifications</span><span class="tag">Live News</span></div>
+          <div class="project-links">
+            <a href="https://play.google.com/store/apps/details?id=mobi.foo.lebanon24iPad" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-play"/></svg>Play Store</a>
+            <a href="https://apps.apple.com/us/app/lebanon-24-%D9%84%D8%A8%D9%86%D8%A7%D9%86-24/id595926843" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-apple"/></svg>App Store</a>
+          </div>
+        </article>
+
+        <!-- Fujairah TV -->
+        <article class="project-card glass reveal">
+          <div class="project-header">
+            <img class="project-icon" src="https://play-lh.googleusercontent.com/2IFD58yrUKASZJyqMpZRvRhbP1kFc3JHDh6WFy2FnsSnkHhNXGU_2T-9WNHVBBBrag=w120-h120" alt="Fujairah TV app icon" loading="lazy" width="56" height="56">
+            <div>
+              <h3 class="project-name">Fujairah TV</h3>
+              <div class="project-platforms">
+                <span class="platform-badge">iOS</span><span class="platform-badge">Android</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">UAE news &amp; entertainment app with live TV streaming, catch-up playback, sports coverage, and social sharing built with Flutter.</p>
+          <div class="project-tags"><span class="tag">Flutter</span><span class="tag">Live Streaming</span></div>
+          <div class="project-links">
+            <a href="https://play.google.com/store/apps/details?id=com.fujairah.tv" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-play"/></svg>Play Store</a>
+            <a href="https://apps.apple.com/lb/app/fujairah-tv/id6479038841" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-apple"/></svg>App Store</a>
+          </div>
+        </article>
+
+        <!-- DomainAgents -->
+        <article class="project-card glass reveal">
+          <div class="project-header">
+            <img class="project-icon" src="https://www.google.com/s2/favicons?domain=domainagents.com&sz=128" alt="DomainAgents logo" loading="lazy" width="56" height="56">
+            <div>
+              <h3 class="project-name">DomainAgents</h3>
+              <div class="project-platforms">
+                <span class="platform-badge">Web</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">Domain name broker &amp; marketplace platform. Led front-end development and engineered a custom Dynamic Landing Page Builder, plus full-stack DevOps contributions.</p>
+          <div class="project-tags"><span class="tag">Angular</span><span class="tag">Full Stack</span><span class="tag">DevOps</span></div>
+          <div class="project-links">
+            <a href="https://domainagents.com" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-web"/></svg>Visit Site</a>
+          </div>
+        </article>
+
+        <!-- Ticketing Box Office -->
+        <article class="project-card glass reveal">
+          <div class="project-header">
+            <img class="project-icon" src="https://play-lh.googleusercontent.com/oRuRzJ_TGDboW5nw1ErgzMij7SfNwoFJFGqsAoRKhZENARDwwxv79k1wOiENA1CcZg=w120-h120" alt="Ticketing Box Office app icon" loading="lazy" width="56" height="56">
+            <div>
+              <h3 class="project-name">Ticketing Box Office</h3>
+              <div class="project-platforms">
+                <span class="platform-badge">iOS</span><span class="platform-badge">Android</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">Event ticketing app rebuilt from scratch — event browsing, seat selection, direct booking, and ticket scanning with integrated analytics charts.</p>
+          <div class="project-tags"><span class="tag">Flutter</span><span class="tag">Ticketing</span><span class="tag">QR Scan</span></div>
+          <div class="project-links">
+            <a href="https://play.google.com/store/apps/details?id=air.com.ticketingboxoffice.mobileapp" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-play"/></svg>Play Store</a>
+            <a href="https://apps.apple.com/lb/app/ticketing-boxoffice/id928469595" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-apple"/></svg>App Store</a>
+          </div>
+        </article>
+
+        <!-- Ekher El Akhbar -->
+        <article class="project-card glass reveal">
+          <div class="project-header">
+            <img class="project-icon" src="https://play-lh.googleusercontent.com/NjB0jmFtxDPrKG-ClqBxMe8ygMV20tdi9UUTGrPC0uxJwLfPxVvMSH-qUciLKIbaRQ=w120-h120" alt="Ekher El Akhbar app icon" loading="lazy" width="56" height="56">
+            <div>
+              <h3 class="project-name">Ekher El Akhbar</h3>
+              <div class="project-platforms">
+                <span class="platform-badge">iOS</span><span class="platform-badge">Android</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">Lebanese breaking news app with instant push alerts and topic customization across politics, sports, and entertainment.</p>
+          <div class="project-tags"><span class="tag">Flutter</span><span class="tag">Push Notifications</span></div>
+          <div class="project-links">
+            <a href="https://play.google.com/store/apps/details?id=air.ekherelakhbar.com" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-play"/></svg>Play Store</a>
+            <a href="https://apps.apple.com/us/app/ekher-el-akhbar/id797601087" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-apple"/></svg>App Store</a>
+          </div>
+        </article>
+
+        <!-- Aliman TV -->
+        <article class="project-card glass reveal">
+          <div class="project-header">
+            <img class="project-icon" src="https://play-lh.googleusercontent.com/0xzwga2oE-6bUp7tggVMlMKCbPVmfXf0xwKpUF6UQ_qPveg3riA6EeE29COrCXKUhGTN=w120-h120" alt="Aliman TV app icon" loading="lazy" width="56" height="56">
+            <div>
+              <h3 class="project-name">Aliman TV</h3>
+              <div class="project-platforms">
+                <span class="platform-badge">iOS</span><span class="platform-badge">Android</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">Lebanese TV channel app with live broadcast streaming, program schedules, and episode catch-up built with Flutter.</p>
+          <div class="project-tags"><span class="tag">Flutter</span><span class="tag">Live TV</span></div>
+          <div class="project-links">
+            <a href="https://play.google.com/store/apps/details?id=air.com.lb.alimantv.app" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-play"/></svg>Play Store</a>
+            <a href="https://apps.apple.com/us/app/%D9%82%D9%86%D8%A7%D8%A9-%D8%A7%D9%84%D8%A7%D9%8A%D9%85%D8%A7%D9%86-%D8%A7%D9%84%D9%81%D8%B6%D8%A7%D8%A6%D9%8A%D8%A9/id1591624476" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-apple"/></svg>App Store</a>
+          </div>
+        </article>
+
+        <!-- Ian Assist -->
+        <article class="project-card glass reveal">
+          <div class="project-header">
+            <img class="project-icon" src="https://play-lh.googleusercontent.com/ylzgUrn0IgOnJcS5MeWfr9kOkrzcpefvwU5XJm894kjuAHH1qrte-Bvhtetb812BiqRt=w120-h120" alt="Ian Assist app icon" loading="lazy" width="56" height="56">
+            <div>
+              <h3 class="project-name">Ian Assist</h3>
+              <div class="project-platforms">
+                <span class="platform-badge">iOS</span><span class="platform-badge">Android</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">Mideast Assistance app featuring live chat support, claim submissions, document uploads, and real-time ticket tracking.</p>
+          <div class="project-tags"><span class="tag">Flutter</span><span class="tag">Live Chat</span><span class="tag">Claims</span></div>
+          <div class="project-links">
+            <a href="https://play.google.com/store/apps/details?id=com.ianassist.ianapp" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-play"/></svg>Play Store</a>
+            <a href="https://apps.apple.com/us/app/ian-assist/id1667218731" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-apple"/></svg>App Store</a>
+          </div>
+        </article>
+
+        <!-- Iraqi Cinema -->
+        <article class="project-card glass reveal">
+          <div class="project-header">
+            <img class="project-icon" src="https://play-lh.googleusercontent.com/J3n2CpwB9lPhm2RwJQR7hayxOarr2Qs2EXgNhpz8DGoEHvVYYBYOd35f-LYqh0LMD8M=w120-h120" alt="Iraqi Cinema app icon" loading="lazy" width="56" height="56">
+            <div>
+              <h3 class="project-name">Iraqi Cinema</h3>
+              <div class="project-platforms">
+                <span class="platform-badge">Desktop</span><span class="platform-badge">Kiosk</span><span class="platform-badge">Mobile</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">Unified cinema booking ecosystem — POS desktop, self-service kiosk, and mobile app built for Iraqi Cinema with seat selection and payment processing.</p>
+          <div class="project-tags"><span class="tag">Flutter</span><span class="tag">POS</span><span class="tag">Kiosk</span></div>
+          <div class="project-links"><span class="store-btn store-btn-muted">Private Client</span></div>
+        </article>
+
+        <!-- Target Food -->
+        <article class="project-card glass reveal">
+          <div class="project-header">
+            <img class="project-icon" src="https://play-lh.googleusercontent.com/P7RHfYsTNpww7P0j_FMCn9GHhlEDjTxa-LDDj-HTgW-cvkTHjJ8FY0gKZP8oI_3Fnl8=w120-h120" alt="Target Food app icon" loading="lazy" width="56" height="56">
+            <div>
+              <h3 class="project-name">Target Food</h3>
+              <div class="project-platforms">
+                <span class="platform-badge">iOS</span><span class="platform-badge">Android</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">Full-featured e-commerce grocery app with product browsing, cart, checkout, and delivery tracking built with Flutter for a seamless shopping experience.</p>
+          <div class="project-tags"><span class="tag">Flutter</span><span class="tag">E-commerce</span><span class="tag">Grocery</span></div>
+          <div class="project-links">
+            <a href="https://play.google.com/store/apps/details?id=com.thewebaddicts.targetfood" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-play"/></svg>Play Store</a>
+            <a href="https://apps.apple.com/lb/app/target-food/id1629391815" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-apple"/></svg>App Store</a>
+          </div>
+        </article>
+
+        <!-- Artist and More -->
+        <article class="project-card glass reveal">
+          <div class="project-header">
+            <img class="project-icon" src="https://play-lh.googleusercontent.com/qo5bb8IO-5weDL4IRIoUYOu8EeejVN9oIzlvtCCL5v7nP2J1ZBvNm2kzy1dE0QieaOQ=w120-h120" alt="Artist and More app icon" loading="lazy" width="56" height="56">
+            <div>
+              <h3 class="project-name">Artist and More</h3>
+              <div class="project-platforms">
+                <span class="platform-badge">iOS</span><span class="platform-badge">Android</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">Event admission ticket scanner app — fast QR/barcode scanning, attendee validation, and real-time entry management built with Flutter.</p>
+          <div class="project-tags"><span class="tag">Flutter</span><span class="tag">QR Scan</span><span class="tag">Events</span></div>
+          <div class="project-links">
+            <a href="https://play.google.com/store/apps/details?id=com.thewebaddicts.artists_and_more_door_control" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-play"/></svg>Play Store</a>
+            <a href="https://apps.apple.com/lb/app/artists-and-more/id1632908576" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-apple"/></svg>App Store</a>
+          </div>
+        </article>
+
+        <!-- USA Cab Ads -->
+        <article class="project-card glass reveal">
+          <div class="project-header">
+            <img class="project-icon" src="https://play-lh.googleusercontent.com/cdTEQTDG45N4c9JBPxrMKSc0K3y9bTGk--jAELFWqwyStjZQi3E0EX4CmTqfVsQjBIZm=w120-h120" alt="USA Cab Ads app icon" loading="lazy" width="56" height="56">
+            <div>
+              <h3 class="project-name">USA Cab Ads</h3>
+              <div class="project-platforms">
+                <span class="platform-badge">iOS</span><span class="platform-badge">Android</span>
+              </div>
+            </div>
+          </div>
+          <p class="project-desc">NYC cab advertisement monitoring app with real-time GPS tracking, campaign analytics, and advanced reporting dashboards built with Flutter.</p>
+          <div class="project-tags"><span class="tag">Flutter</span><span class="tag">GPS Tracking</span><span class="tag">Analytics</span></div>
+          <div class="project-links">
+            <a href="https://play.google.com/store/apps/details?id=com.thewebaddicts.usa_cab_ads_app" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-play"/></svg>Play Store</a>
+            <a href="https://apps.apple.com/us/app/usa-cab-ads/id6445888428" target="_blank" rel="noopener noreferrer" class="store-btn"><svg width="14" height="14" aria-hidden="true"><use href="#ico-apple"/></svg>App Store</a>
+          </div>
+        </article>
+
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── CONTACT ───── -->
+  <section id="contact" class="section section-contact" aria-label="Contact">
+    <div class="container">
+      <div class="contact-card glass reveal">
+        <span class="section-tag">Get in touch</span>
+        <h2 class="section-title contact-title">Let's Work Together</h2>
+        <p class="contact-desc">Open to new opportunities, collaborations, and interesting projects. Drop me a line.</p>
+        <div class="contact-actions">
+          <a href="mailto:sabbaghpierre@proton.me" class="btn btn-primary">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            sabbaghpierre@proton.me
+          </a>
+          <a href="https://github.com/sabbaghpierre" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 496 512" fill="currentColor" aria-hidden="true">
+              <path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8z"/>
+            </svg>
+            GitHub
+          </a>
+          <a href="resume.pdf" download="Pierre_Sabbagh_Resume" class="btn btn-outline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><line x1="9" y1="15" x2="15" y2="15"/></svg>
+            Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── FOOTER ───── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span class="footer-copy">© 2026 Pierre Sabbagh</span>
+    </div>
+  </footer>
+
+  <script>
+    // ── Typed text ──
+    const roles = ['Mobile Developer', 'Flutter Engineer', 'Web Developer', 'Full Stack Developer'];
+    const typedEl = document.querySelector('.typed-text');
+    let roleIndex = 0, charIndex = 0, deleting = false;
+
+    function type() {
+      const current = roles[roleIndex];
+      if (!deleting) {
+        typedEl.textContent = current.slice(0, charIndex + 1);
+        charIndex++;
+        if (charIndex === current.length) {
+          deleting = true;
+          setTimeout(type, 2000);
+          return;
+        }
+      } else {
+        typedEl.textContent = current.slice(0, charIndex - 1);
+        charIndex--;
+        if (charIndex === 0) {
+          deleting = false;
+          roleIndex = (roleIndex + 1) % roles.length;
+        }
+      }
+      setTimeout(type, deleting ? 55 : 85);
+    }
+
+    // ── Scroll reveal ──
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('visible');
+          revealObserver.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -48px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // Stagger hero reveals on load
+    document.querySelectorAll('.hero-content .reveal').forEach((el, i) => {
+      setTimeout(() => el.classList.add('visible'), i * 110 + 150);
+    });
+
+    // Start typing after hero name reveals
+    setTimeout(type, 600);
+
+    // ── Active nav ──
+    const sections   = document.querySelectorAll('section[id]');
+    const navLinks   = document.querySelectorAll('.nav-link');
+    const navObserver = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          const link = document.querySelector(`.nav-link[href="#${e.target.id}"]`);
+          if (link) link.classList.add('active');
+        }
+      });
+    }, { rootMargin: '-35% 0px -35% 0px' });
+    sections.forEach(s => navObserver.observe(s));
+
+    // ── Smooth scroll ──
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+
+    // ── Reduced motion ──
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      document.querySelectorAll('.reveal').forEach(el => el.classList.add('visible'));
+    }
+  </script>
+
+  <script>
+  // ── Terminal overlay ──
+  (function () {
+    const overlay   = document.getElementById('termOverlay');
+    const termBody  = document.getElementById('termBody');
+    const termInput = document.getElementById('termInput');
+    const toggleBtn = document.getElementById('termToggle');
+    const closeBtn  = document.getElementById('termClose');
+    if (!overlay || !termBody || !termInput) return;
+
+    let isOpen = false;
+    let demoPlayed = false;
+
+    function openTerminal() {
+      isOpen = true;
+      overlay.classList.add('open');
+      overlay.setAttribute('aria-hidden', 'false');
+      toggleBtn.setAttribute('aria-expanded', 'true');
+      toggleBtn.classList.add('active');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => termInput.focus(), 320);
+      if (!demoPlayed) {
+        demoPlayed = true;
+        // line('<span class="tmuted">Welcome to Pierre\'s portfolio terminal.</span>');
+        line('<span class="tmuted">Type <span class="tk">help</span> to see available commands.</span>');
+        setTimeout(() => playDemo([['whoami', 1100], ['skills', 700]]), 500);
+      }
+    }
+
+    function closeTerminal() {
+      isOpen = false;
+      overlay.classList.remove('open');
+      overlay.setAttribute('aria-hidden', 'true');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+      toggleBtn.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    toggleBtn.addEventListener('click', () => isOpen ? closeTerminal() : openTerminal());
+    closeBtn.addEventListener('click', closeTerminal);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && isOpen) closeTerminal(); });
+
+    // ── Commands ──
+    function esc(s) {
+      return s.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+    }
+
+    function line(html, cls) {
+      const el = document.createElement('div');
+      el.className = 'tl' + (cls ? ' ' + cls : '');
+      el.innerHTML = html;
+      termBody.appendChild(el);
+      termBody.scrollTop = termBody.scrollHeight;
+    }
+
+    const P = '<span class="tp">pierre</span><span class="ts">@portfolio</span><span class="ts2">:</span><span class="td">~</span><span class="ts2">$</span> ';
+
+    const CMDS = {
+      help: () =>
+`<span class="th">Commands</span>
+  <span class="tk">whoami</span>       — About Pierre
+  <span class="tk">skills</span>       — Tech stack & tools
+  <span class="tk">experience</span>   — Work history
+  <span class="tk">projects</span>     — Featured projects
+  <span class="tk">contact</span>      — Get in touch
+  <span class="tk">github</span>       — Open GitHub profile
+  <span class="tk">resume</span>       — Download resume PDF
+  <span class="tk">ls</span>           — List directory
+  <span class="tk">clear</span>        — Clear terminal
+  <span class="tk">exit</span>         — Close terminal`,
+
+      whoami: () =>
+`<span class="th">Pierre Sabbagh</span>  —  Senior Mobile & Web Developer
+  Location  :  Biaqout, Lebanon
+  Focus     :  Flutter · Angular · React Native
+  Status    :  <span class="tok">● Available for work</span>`,
+
+      about: () =>
+`<span class="th">About</span>
+  Building performant, beautiful experiences since 2021.
+  Led migration of Al Jadeed & Lebanon 24 to Flutter —
+  maintaining 24/7 uptime for <span class="tok">1M+ users</span> during national instability.
+  Currently building across mobile & web simultaneously
+  at DomainAgents and Adrea.`,
+
+      skills: () =>
+`<span class="th">Stack</span>
+  Flutter · Angular · React Native · tvOS & Tizen · Go · MySQL
+
+<span class="th">AI & DevOps</span>
+  Claude Code · MCP · Firebase · CI/CD
+  Docker · K8s · Cloudflare · App/Play Store
+
+<span class="th">Languages</span>
+  Arabic (Native) · English (Professional) · French (Professional)`,
+
+      experience: () =>
+`<span class="th">Work History</span>
+  <span class="tk">DomainAgents</span>   Web Developer      <span class="tok">Nov 2024 – Now</span>
+  <span class="tk">Adrea</span>          Mobile Developer   <span class="tok">Jan 2025 – Now</span>
+  <span class="tk">Softimpact</span>     Mobile Developer   Jan 2023 – Nov 2024
+  <span class="tk">Early Career</span>   Mobile Developer   Jan 2021 – Jan 2023`,
+
+      projects: () =>
+`<span class="th">Featured Projects</span>
+  <span class="tk">Al Jadeed</span>            Flutter · Live Streaming · tvOS
+  <span class="tk">Lebanon 24</span>           Flutter · Push Notifications · 1M+ users
+  <span class="tk">Ekher El Akhbar</span>      Flutter · News · iOS & Android
+  <span class="tk">Fujairah TV</span>          Flutter · Live TV · UAE
+  <span class="tk">Aliman TV</span>            Flutter · Live Broadcast
+  <span class="tk">Ian Assist</span>           Flutter · Live Chat · Claims
+  <span class="tk">Ticketing Box Office</span>  Flutter · Events · QR Scan
+  <span class="tk">Iraqi Cinema</span>         Flutter · POS · Kiosk · Mobile
+  <span class="tk">Target Food</span>          Flutter · E-commerce · Grocery
+  <span class="tk">Artist and More</span>      Flutter · Ticket Scanner
+  <span class="tk">USA Cab Ads</span>          Flutter · GPS · Analytics
+  <span class="tk">Urban Beirut</span>         Flutter · E-commerce · Furniture
+  <span class="tk">Beirutic</span>             Flutter · E-commerce
+  <span class="tk">Adrea</span>                Flutter · AI · Equestrian
+  <span class="tk">DomainAgents</span>         Angular · Full Stack · Domain Marketplace`,
+
+      contact: () =>
+`<span class="th">Contact</span>
+  Email   :  <span class="tlink">sabbaghpierre@proton.me</span>
+  GitHub  :  <span class="tlink">github.com/sabbaghpierre</span>
+  Web     :  <span class="tlink">sabbaghpierre.github.io</span>`,
+
+      github: () => {
+        setTimeout(() => window.open('https://github.com/sabbaghpierre', '_blank', 'noopener,noreferrer'), 350);
+        return 'Opening <span class="tlink">github.com/sabbaghpierre</span> ...';
+      },
+
+      resume: () => {
+        setTimeout(() => {
+          const a = document.createElement('a');
+          a.href = 'resume.pdf'; a.download = 'Pierre_Sabbagh_Resume';
+          document.body.appendChild(a); a.click(); document.body.removeChild(a);
+        }, 350);
+        return 'Downloading <span class="tlink">Pierre_Sabbagh_Resume.pdf</span> ...';
+      },
+
+      ls: () =>
+`<span class="td">drwxr-xr-x</span>  about.txt
+<span class="td">drwxr-xr-x</span>  skills.json
+<span class="td">drwxr-xr-x</span>  experience/
+<span class="td">drwxr-xr-x</span>  resume.pdf
+<span class="td">drwxr-xr-x</span>  .secret   <span class="tmuted">← try: cat .secret</span>`,
+
+      'cat about.txt': () =>
+`Building things that matter with technology that scales.
+Flutter for mobile. Angular for web. Go for backend.
+Always learning, always shipping.`,
+
+      'cat .secret': () =>
+`<span class="tok">// you found it.</span>
+This portfolio runs on pure HTML, CSS and vanilla JS —
+no frameworks, no build step, no dependencies. Just code.`,
+
+      date: () => new Date().toUTCString(),
+      exit:  () => { setTimeout(closeTerminal, 180); return '<span class="tmuted">Closing terminal...</span>'; },
+      clear: () => null,
+    };
+
+    function runCmd(raw) {
+      const cmd = raw.trim();
+      const key = cmd.toLowerCase();
+      if (key === '') return;
+      if (key.startsWith('echo ')) { line(esc(raw.slice(5))); return; }
+      if (key in CMDS) {
+        const out = CMDS[key]();
+        if (out === null) termBody.innerHTML = '';
+        else line(out);
+      } else {
+        line('<span class="terr">zsh: command not found: ' + esc(cmd) + '</span>');
+      }
+    }
+
+    function printPrompt(cmd) {
+      line(P + '<span class="techo">' + esc(cmd) + '</span>', 'tprompt-line');
+    }
+
+    termInput.addEventListener('keydown', e => {
+      if (e.key === 'Enter') {
+        const val = termInput.value;
+        printPrompt(val);
+        runCmd(val);
+        termInput.value = '';
+      }
+    });
+
+    overlay.addEventListener('click', e => {
+      if (e.target === overlay) termInput.focus();
+    });
+
+    // Auto-demo on first open
+    function playDemo(cmds, i = 0) {
+      if (i >= cmds.length) return;
+      const [cmd, pause] = cmds[i];
+      let ci = 0;
+      termInput.value = '';
+      const iv = setInterval(() => {
+        if (ci < cmd.length) { termInput.value += cmd[ci++]; }
+        else {
+          clearInterval(iv);
+          setTimeout(() => {
+            printPrompt(cmd); runCmd(cmd);
+            setTimeout(() => playDemo(cmds, i + 1), pause);
+          }, 380);
+        }
+      }, 58);
+    }
+  })();
+  </script>
 </body>
-
 </html>
