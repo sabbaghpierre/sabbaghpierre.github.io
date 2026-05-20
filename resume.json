@@ -22,14 +22,6 @@
       "studyType": "BS",
       "endDate": "2020",
       "startDate": "2017"
-    },
-    {
-      "institution": "Val Père Jacques",
-      "location": "Bkennaya, LB",
-      "studyType": "LEBANESE BACCALAUREATE CERTIFICATE",
-      "area": "Economics & Sociology",
-      "startDate": "2001",
-      "endDate": "2016"
     }
   ],
   "work": [
@@ -43,9 +35,9 @@
       "position": "Web Developer",
       "location": "Remote",
       "startDate": "Nov 2024",
-      "endDate": "Present"
+      "endDate": "Apr 2026"
     },
-        {
+    {
       "highlights": [
         "Lead mobile development of the Adrea app, a comprehensive equestrian facility management platform that enables complete oversight of horse health, medical records, and daily operations, where I engineered all of the features, from live video feed, push notifications, horse medical files management to data analytics driven by AI oversight."
       ],
