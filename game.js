@@ -1716,7 +1716,9 @@ const dlgTitle = document.getElementById('dlgTitle');
 const dlgBody = document.getElementById('dlgBody');
 const dlgFoot = document.getElementById('dlgFoot');
 document.getElementById('dlgClose').addEventListener('click', () => dlgBack());
-dlgEl.addEventListener('click', e => { if (e.target === dlgEl) dlgBack(); });
+// backdrop-tap closes on desktop only; on touch the screen below the
+// window (and the d-pad's hollow centre) would close it by accident — use B
+dlgEl.addEventListener('click', e => { if (!IS_TOUCH && e.target === dlgEl) dlgBack(); });
 
 let dlgId = null, dlgBackTarget = null, dlgItems = [], dlgSel = 0;
 
