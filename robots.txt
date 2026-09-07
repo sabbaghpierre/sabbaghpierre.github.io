@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sabbaghpierre.is-a.dev/sitemap.xml
