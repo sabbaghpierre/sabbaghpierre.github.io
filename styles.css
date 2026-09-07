@@ -3,8 +3,23 @@
    PICO-8 palette · Press Start 2P + VT323
    ════════════════════════════════════════════════════ */
 
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/press-start-2p-latin.woff2') format('woff2');
+}
+@font-face {
+  font-family: 'VT323';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('fonts/vt323-latin.woff2') format('woff2');
+}
+
 :root {
-  --p-black:  #000000;
+  --p-black: #000000;
   --p-navy:   #1D2B53;
   --p-plum:   #7E2553;
   --p-green:  #008751;
@@ -65,6 +80,9 @@ button { font-family: inherit; cursor: pointer; }
 /* ───── Screen + bezel ───── */
 .screen-wrap {
   position: relative;
+  width: min(1200px, calc(100vw - 24px), calc((100vh - 90px) * 1.5));
+  width: min(1200px, calc(100vw - 24px), calc((100dvh - 90px) * 1.5));
+  aspect-ratio: 3 / 2;
   background: var(--p-black);
   border: 4px solid #2A2440;
   outline: 4px solid var(--p-black);
@@ -528,6 +546,10 @@ body[data-state="menu"] .menu { display: flex; }
    a fixed bar pinned to the bottom, floating ABOVE every overlay
    (menu z120 / dialog z150 / terminal z200) so they always work. */
 @media (pointer: coarse) {
+  .screen-wrap {
+    width: min(1200px, calc(100vw - 24px), calc((100vh - 200px) * 1.5));
+    width: min(1200px, calc(100vw - 24px), calc((100dvh - 200px) * 1.5));
+  }
   .touch {
     display: flex;
     position: fixed;
