@@ -6,7 +6,15 @@
     <style>
         @page {
             size: A4;
-            margin: 12mm 15mm;
+            margin: 0;
+        }
+        :root {
+            --base-size: 8.6pt;
+            --navy: #1a365d;
+            --rule: #2b6cb0;
+            --ink: #2d3748;
+            --muted: #4a5568;
+            --faint: #718096;
         }
         * {
             box-sizing: border-box;
@@ -15,90 +23,127 @@
         }
         body {
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-            color: #2d3748;
-            line-height: 1.45;
-            font-size: 9pt;
+            color: var(--ink);
+            font-size: var(--base-size);
+            line-height: 1.4;
+            padding: 12mm 15mm;
         }
+
+        /* Header */
         .header {
-            text-align: center;
-            margin-bottom: 16px;
-            border-bottom: 2px solid #2b6cb0;
+            text-align: left;
+            border-bottom: 2px solid var(--rule);
             padding-bottom: 8px;
         }
         .name {
-            font-size: 24pt;
+            font-size: 22pt;
             font-weight: bold;
-            color: #1a365d;
-            margin-bottom: 3px;
+            line-height: 1.1;
             letter-spacing: -0.5px;
+            color: var(--navy);
+        }
+        .label {
+            font-size: 10.5pt;
+            color: var(--rule);
+            margin-top: 2px;
         }
         .contact-info {
-            font-size: 9.5pt;
-            color: #4a5568;
+            font-size: 9pt;
+            color: var(--muted);
+            margin-top: 5px;
         }
         .contact-info a {
-            color: #2b6cb0;
+            color: var(--rule);
             text-decoration: none;
         }
+        .li-mark {
+            width: 8.5pt;
+            height: 8.5pt;
+            vertical-align: -1pt;
+            margin-right: 1.5pt;
+        }
+        .summary {
+            font-size: var(--base-size);
+            color: var(--muted);
+            text-align: left;
+            margin-top: 6px;
+        }
+
+        /* Sections */
         .section-title {
-            font-size: 12pt;
+            font-size: 11pt;
             font-weight: bold;
-            color: #1a365d;
+            color: var(--navy);
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-top: 16px;
+            margin-top: 18px;
             margin-bottom: 8px;
             border-bottom: 1px solid #e2e8f0;
             padding-bottom: 2px;
+            break-after: avoid;
+            page-break-after: avoid;
         }
+
+        /* Experience */
         .job-entry {
-            margin-bottom: 12px;
+            margin-bottom: 13px;
+            break-inside: avoid;
+            page-break-inside: avoid;
         }
         .job-table {
             width: 100%;
             border-collapse: collapse;
-            margin-bottom: 4px;
         }
         .job-title {
             font-weight: bold;
             font-size: 10pt;
-            color: #2d3748;
+            color: var(--ink);
             text-align: left;
         }
         .job-company {
             font-weight: bold;
-            color: #2b6cb0;
+            color: var(--rule);
+        }
+        .job-meta {
+            font-weight: normal;
+            color: var(--faint);
+            font-size: 8.8pt;
         }
         .job-date {
             text-align: right;
             font-size: 9pt;
-            color: #718096;
+            color: var(--faint);
             font-style: italic;
+            white-space: nowrap;
         }
         ul {
-            margin: 0;
-            padding-left: 16px;
+            margin: 4px 0 0 0;
+            padding-left: 14px;
         }
         li {
-            margin-bottom: 3px;
-            color: #4a5568;
-            text-align: justify;
+            margin-bottom: 4px;
+            color: var(--muted);
+            text-align: left;
+            break-inside: avoid;
+            page-break-inside: avoid;
         }
+
+        /* Skills / Languages */
         .skills-table {
             width: 100%;
             border-collapse: collapse;
         }
         .skills-table td {
-            padding: 3px 0;
+            padding: 3.5px 0;
             vertical-align: top;
         }
         .skills-category {
             font-weight: bold;
-            color: #2d3748;
-            width: 160px;
+            color: var(--ink);
+            width: 50mm;
         }
         .skills-list {
-            color: #4a5568;
+            color: var(--muted);
         }
     </style>
 </head>
@@ -106,108 +151,108 @@
 
     <div class="header">
         <h1 class="name">Pierre Sabbagh</h1>
+        <p class="label">Mobile &amp; Full-Stack Developer</p>
         <p class="contact-info">
-            Biaqout, LB &bull; (961) 76 630 992 &bull; 
-            <a href="mailto:sabbaghpierre@proton.me">sabbaghpierre@proton.me</a> &bull; 
-            <a href="https://sabbaghpierre.github.io" target="_blank">sabbaghpierre.github.io</a>
+            Biaqout, LB &bull; <a href="tel:+96176630992">+96176630992</a><br>
+            <a href="mailto:sabbaghpierre@protonmail.com">sabbaghpierre@protonmail.com</a> &bull;
+            <a href="https://sabbaghpierre.is-a.dev" target="_blank">sabbaghpierre.is-a.dev</a> &bull;
+            <a href="https://www.linkedin.com/in/sabbaghpierre" target="_blank"><svg class="li-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#0a66c2" d="M22.2,0H1.8C0.8,0,0,0.8,0,1.7v20.5c0,1,0.8,1.7,1.8,1.7h20.5c1,0,1.8-0.8,1.8-1.7V1.7C24,0.8,23.2,0,22.2,0z"/><path fill="#fff" d="M3.6,9h3.6v11.5H3.6V9zM5.3,3.3c1.1,0,2.1,0.9,2.1,2.1S6.5,7.4,5.3,7.4c-1.1,0-2.1-0.9-2.1-2.1S4.2,3.3,5.3,3.3"/><path fill="#fff" d="M9.4,9h3.4v1.6h0c0.5-0.9,1.6-1.8,3.4-1.8c3.6,0,4.3,2.4,4.3,5.5v6.3h-3.6v-5.6c0-1.3,0-3-1.9-3s-2.1,1.4-2.1,2.9v5.7H9.4V9z"/></svg>sabbaghpierre</a>
         </p>
+        <p class="summary">5+ years in production software across mobile, frontend and backend: migrated 5 live apps to Flutter, including 2 national news apps with 1M+ existing installs, and shipped Angular front-ends and Go APIs. Sole mobile developer on an equestrian platform, delivering video, push and analytics driven by a backend-trained model.</p>
     </div>
 
-    <div class="section-title">Experience</div>
+    <div class="section-title">Work Experience</div>
 
     <div class="job-entry">
         <table class="job-table">
             <tr>
-                <td class="job-title"><span class="job-company">Adrea</span> &ndash; Mobile Developer <span style="font-weight: normal; color: #718096; font-size: 8.5pt;">(Remote Contract)</span></td>
+                <td class="job-title"><span class="job-company">Adrea</span> &ndash; Mobile Developer <span class="job-meta">(Remote Contract)</span></td>
                 <td class="job-date">Jan 2025 &ndash; Present</td>
             </tr>
         </table>
         <ul>
-            <li>Lead mobile development of the Adrea app, a comprehensive equestrian facility management platform that enables complete oversight of horse health, medical records, and daily operations, where engineered all of the features, from live video feed, push notifications, horse medical files management to data analytics driven by AI oversight.</li>
+            <li>Sole mobile developer on Adrea, an equestrian platform covering horse health, medical records and daily operations.</li>
+            <li>Shipped 4 feature areas: live video feed, push notifications, medical file management, and in-app analytics surfacing predictions from a backend-trained model.</li>
+            <li>Delivered horse tracking with over 90% location accuracy measured in live facility use.</li>
         </ul>
     </div>
 
     <div class="job-entry">
         <table class="job-table">
             <tr>
-                <td class="job-title"><span class="job-company">DomainAgents</span> &ndash; Full Stack Developer <span style="font-weight: normal; color: #718096; font-size: 8.5pt;">(Remote)</span></td>
+                <td class="job-title"><span class="job-company">DomainAgents</span> &ndash; Full Stack Developer <span class="job-meta">(Remote, Canada)</span></td>
                 <td class="job-date">Nov 2024 &ndash; Apr 2026</td>
             </tr>
         </table>
         <ul>
-            <li>Lead front-end development, maintaining and enhancing features of domainagents.com and various sub-projects.</li>
-            <li>Engineered a custom Dynamic Landing Page Builder from scratch, increasing internal marketing agility.</li>
-            <li>Contributed across the full stack on the Backend/DevOps side.</li>
+            <li>Led front-end development of domainagents.com and 4 internal Angular tools, maintaining and shipping features end to end.</li>
+            <li>Engineered a Dynamic Landing Page Builder from scratch, letting customers build their own marketing pages for domains on sale without developer involvement.</li>
+            <li>Added backend endpoints in Go and Gin with related database work, and rebuilt GitHub Actions deploy pipelines.</li>
         </ul>
     </div>
 
     <div class="job-entry">
         <table class="job-table">
             <tr>
-                <td class="job-title"><span class="job-company">Softimpact</span> &ndash; Mobile Developer <span style="font-weight: normal; color: #718096; font-size: 8.5pt;">(Jdeideh)</span></td>
+                <td class="job-title"><span class="job-company">Softimpact</span> &ndash; Mobile Developer <span class="job-meta">(Jdeideh)</span></td>
                 <td class="job-date">Jan 2023 &ndash; Nov 2024</td>
             </tr>
         </table>
         <ul>
-            <li>Led the complete migration and modernization of several apps to Flutter, including top news apps such as Al Jadeed and Lebanon 24, maintaining 24/7 uptime for millions of users during periods of national instability. Additional apps such as Fujairah TV, Aliman TV, and Ekher el Akhbar were also developed, integrating advanced features such as news updates, live streaming, episodes video playback, Google Cast & Apple AirPlay support, Picture-in-Picture, Banner/IMA Ads, Push Notifications, QR Code login, Caching, Quick Actions, Weather Section, Episode Reminders and performance optimizations.</li>
-            <li>Led the development of Al Jadeed for tvOS using React Native and contributed to its implementation on the Tizen platform using web technologies.</li>
-            <li>Developed Ian Assist for Mideast Assistance, featuring support tickets, live chat, claim submissions, and document uploads.</li>
-            <li>Rebuilt the Ticketing Box Office app from scratch with event browsing, direct booking, ticket scanning, and integrated charts.</li>
+            <li>Led Flutter development across 5 apps: Al Jadeed, Lebanon 24 and Ticketing Box Office, the first two with existing install bases of 1M+ each, plus tvOS in React Native and Tizen.</li>
+            <li>Maintained 24/7 uptime for thousands of users through Lebanon's crisis, owning releases and crash monitoring, delivering live streaming, AirPlay, Google Cast, Picture-in-Picture, ads and push notifications across Fujairah TV, Aliman TV and Ekher el Akhbar.</li>
+            <li>Built Ian Assist for Mideast Assistance from scratch, covering ticketing, live chat and claims.</li>
         </ul>
     </div>
 
     <div class="job-entry">
         <table class="job-table">
             <tr>
-                <td class="job-title"><span class="job-company">Groupe Vital</span> &ndash; Full Stack Web Developer <span style="font-weight: normal; color: #718096; font-size: 8.5pt;">(Remote Contract)</span></td>
-                <td class="job-date">Mar 2023 &ndash; Jun 2023</td>
-            </tr>
-        </table>
-        <ul>
-            <li>Contributed to full-stack development of an internal web platform for employee management using ReactJS and NodeJS backend services.</li>
-        </ul>
-    </div>
-
-    <div class="job-entry">
-        <table class="job-table">
-            <tr>
-                <td class="job-title"><span class="job-company">TheWebAddicts</span> &ndash; Mobile Developer <span style="font-weight: normal; color: #718096; font-size: 8.5pt;">(Mirna Chalouhi)</span></td>
+                <td class="job-title"><span class="job-company">TheWebAddicts</span> &ndash; Mobile Developer <span class="job-meta">(Mirna Chalouhi)</span></td>
                 <td class="job-date">Jan 2022 &ndash; Jan 2023</td>
             </tr>
         </table>
         <ul>
-            <li>Architected and developed a unified cinema booking ecosystem (POS Desktop, Kiosk, Mobile) for Iraqi Cinema.</li>
-            <li>Engineered and launched Target Food, a comprehensive e-commerce grocery app, using Flutter for a seamless shopping experience.</li>
-            <li>Created Artist and More, a ticket scanner app for event admissions, using Flutter.</li>
-            <li>Developed USA Cab Ads, an app for monitoring and analyzing NYC cab advertisements, with GPS tracking and advanced analytics.</li>
+            <li>Architected a cinema booking ecosystem for Iraqi Cinema across 3 platforms: POS desktop, kiosk and mobile.</li>
+            <li>Built and shipped Target Food, an e-commerce grocery app in Flutter.</li>
+            <li>Created Artist &amp; More, a Flutter ticket scanner app for event admissions.</li>
+            <li>Developed USA Cab Ads, tracking NYC cab campaigns via GPS with in-app analytics.</li>
         </ul>
     </div>
 
     <div class="job-entry">
         <table class="job-table">
             <tr>
-                <td class="job-title"><span class="job-company">Fodigi</span> &ndash; Mobile & Backend Developer <span style="font-weight: normal; color: #718096; font-size: 8.5pt;">(Dekwaneh)</span></td>
+                <td class="job-title"><span class="job-company">Fodigi</span> &ndash; Mobile &amp; Backend Developer <span class="job-meta">(Dekwaneh)</span></td>
                 <td class="job-date">Jan 2021 &ndash; Dec 2021</td>
             </tr>
         </table>
         <ul>
-            <li>Engineered Urban Beirut and Beirutic e-commerce apps; built custom backend services and data structures using Firebase to extend core capabilities beyond standard WooCommerce APIs.</li>
-            <li>Contributed to a delivery based app with Google Maps tracking.</li>
+            <li>Built Urban Beirut (100k+ downloads) in Flutter on the client's WooCommerce REST API, adding a Firestore backend for in-app feature data, push notifications and Crashlytics.</li>
+            <li>Delivered Beirutic (20k+ downloads) on the same Flutter and WooCommerce stack, with custom Firebase endpoints extending core store data.</li>
         </ul>
     </div>
 
     <div class="section-title">Skills</div>
     <table class="skills-table">
         <tr>
-            <td class="skills-category">Languages & Frameworks:</td>
-            <td class="skills-list">Flutter, Angular, React Native, ReactJS, NodeJS, tvOS & Tizen, Go, MySQL</td>
+            <td class="skills-category">Programming Languages:</td>
+            <td class="skills-list">Dart, TypeScript, JavaScript, Go, Java</td>
         </tr>
         <tr>
-            <td class="skills-category">Tools & Infrastructure:</td>
-            <td class="skills-list">Claude Code, MCP, Firebase, REST APIs, CI/CD, Docker, K8s, Cloudflare, App/Play Store Deployments</td>
+            <td class="skills-category">Frameworks &amp; Libraries:</td>
+            <td class="skills-list">Flutter, React Native, React, Angular, Node.js, Gin, Bloc</td>
         </tr>
         <tr>
-            <td class="skills-category">Languages:</td>
+            <td class="skills-category">Platforms &amp; Infrastructure:</td>
+            <td class="skills-list">Android, iOS, tvOS, Tizen, GCP, Firebase/Firestore, MariaDB, SQLite, Docker, Kubernetes, GitHub Actions, CI/CD, Git, WooCommerce REST API, App Store &amp; Google Play</td>
+        </tr>
+    </table>
+
+    <div class="section-title">Languages</div>
+    <table class="skills-table">
+        <tr>
+            <td class="skills-category">Fluency:</td>
             <td class="skills-list">Arabic (Native), English (Professional), French (Professional)</td>
         </tr>
     </table>
@@ -215,7 +260,7 @@
     <div class="section-title">Education</div>
     <table class="job-table">
         <tr>
-            <td class="job-title"><span class="job-company">Arab Open University</span> &ndash; BS in Computer Science <span style="font-weight: normal; color: #718096; font-size: 8.5pt;">(Antelias)</span></td>
+            <td class="job-title"><span class="job-company">Arab Open University</span> &ndash; B.S. in Computer Science <span class="job-meta">(Antelias, Lebanon)</span></td>
             <td class="job-date">2017 &ndash; 2020</td>
         </tr>
     </table>
