@@ -1,4 +1,4 @@
-name: Build resume
+name: Verify resume
 
 on:
   push:
@@ -7,23 +7,41 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  build:
+  verify:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Build PDF
+      - name: Install poppler-utils
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+      - name: Snapshot committed PDF
+        run: cp resume.pdf /tmp/committed.pdf
+      - name: Build PDF from source
         run: ./build.sh
-      - name: Commit updated PDF
+      - name: Verify committed PDF matches the source
         run: |
-          if git diff --quiet -- resume.pdf; then
-            echo "resume.pdf unchanged"
-            exit 0
+          set -euo pipefail
+          fail() { echo "::error::$1"; exit 1; }
+
+          [ -s /tmp/committed.pdf ] || fail "no resume.pdf was committed"
+
+          PAGES=$(pdfinfo /tmp/committed.pdf | awk '/^Pages:/{print $2}')
+          [ "$PAGES" = "1" ] || fail "committed resume.pdf is $PAGES pages, expected 1"
+
+          # Compare text with all whitespace stripped: robust to font-metric
+          # differences between Chrome versions, but still catches a stale or
+          # truncated PDF.
+          pdftotext -layout /tmp/committed.pdf /tmp/committed.txt
+          pdftotext -layout resume.pdf /tmp/fresh.txt
+          tr -d '[:space:]' < /tmp/committed.txt > /tmp/committed.norm
+          tr -d '[:space:]' < /tmp/fresh.txt > /tmp/fresh.norm
+
+          if ! diff -q /tmp/committed.norm /tmp/fresh.norm > /dev/null; then
+            echo "committed resume.pdf does not match resume_source.html:"
+            diff /tmp/committed.norm /tmp/fresh.norm | head -c 2000
+            fail "run ./build.sh locally and commit the result"
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add resume.pdf
-          git commit -m "chore: rebuild resume PDF"
-          git push
+
+          echo "resume.pdf matches the source and fits on one page"
