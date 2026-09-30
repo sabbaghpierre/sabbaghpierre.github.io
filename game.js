@@ -10,15 +10,15 @@
 const DATA = {
   about: {
     name: 'Pierre Sabbagh',
-    role: 'Senior Mobile & Web Developer',
+    role: 'Mobile & Full-Stack Developer',
     loc: 'Biaqout, Lebanon · Remote',
     bio: 'Building performant, beautiful experiences across Flutter, React Native & Angular — from app stores to production web, for users at scale.',
-    bio2: 'Led the migration of Lebanon’s top news apps to Flutter, keeping them online 24/7 for millions of users during national instability. Currently building across mobile & web simultaneously at DomainAgents and Adrea.',
-    stats: [['5+', 'YEARS EXPERIENCE'], ['15+', 'APPS SHIPPED'], ['1M+', 'USERS REACHED']],
+    bio2: 'Led the migration of Lebanon’s top news apps to Flutter, keeping them online 24/7 for thousands of users during national instability. Currently building mobile experiences end to end at Adrea.',
+    stats: [['5+', 'YEARS EXPERIENCE'], ['15+', 'APPS SHIPPED'], ['1M+', 'APP INSTALLS']],
   },
   skills: [
-    { name: 'STACK', items: 'Flutter · Angular · React Native · React · Node.js · iOS & Android · tvOS & Tizen · Go · MySQL' },
-    { name: 'AI & DEVOPS', items: 'Claude Code · MCP · Firebase · CI/CD · Docker · Kubernetes · Cloudflare · App & Play Store deployments' },
+    { name: 'STACK', items: 'Dart · TypeScript · JavaScript · Go · Java · Flutter · Angular · React Native · React · Node.js · Gin · Bloc · iOS & Android · tvOS & Tizen · MariaDB' },
+    { name: 'AI & DEVOPS', items: 'Claude Code · MCP · Firebase · GCP · SQLite · Docker · Kubernetes · GitHub Actions · CI/CD · Git · Cloudflare · WooCommerce REST API · App & Play Store deployments' },
     { name: 'LANGUAGES', items: 'Arabic (native) · English (professional) · French (professional)' },
     { name: 'EDUCATION', items: 'BS Computer Science — Arab Open University, Antelias · 2017–2020' },
   ],
@@ -26,23 +26,25 @@ const DATA = {
     {
       co: 'Adrea', role: 'Mobile Developer', date: 'Jan 2025 — Present', loc: 'Remote · Contract', now: true,
       points: [
-        'Lead mobile development of the Adrea app — a comprehensive equestrian facility management platform with live video feed, push notifications, horse medical records, and data analytics driven by AI oversight.',
+        'Sole mobile developer on Adrea, an equestrian facility management platform covering horse health, medical records and daily operations.',
+        'Shipped live video feed, push notifications, medical file management, and in-app analytics surfacing predictions from a backend-trained model.',
+        'Delivered horse tracking with over 90% location accuracy measured in live facility use.',
       ],
       tags: 'Flutter · AI · Live Streaming · Push Notifications',
     },
     {
-      co: 'DomainAgents', role: 'Web Developer', date: 'Nov 2024 — Apr 2026', loc: 'Remote',
+      co: 'DomainAgents', role: 'Full Stack Developer', date: 'Nov 2024 — Apr 2026', loc: 'Remote · Canada',
       points: [
-        'Lead front-end development, maintaining and enhancing features of domainagents.com and various sub-projects.',
-        'Engineered a custom Dynamic Landing Page Builder from scratch, increasing internal marketing agility.',
-        'Full Stack contribution on the Backend/DevOps side.',
+        'Led front-end development of domainagents.com and 4 internal Angular tools, maintaining and shipping features end to end.',
+        'Engineered a Dynamic Landing Page Builder from scratch, letting customers build their own marketing pages for domains on sale without developer involvement.',
+        'Added backend endpoints in Go and Gin with related database work, and rebuilt GitHub Actions deploy pipelines.',
       ],
-      tags: 'Angular · Full Stack · DevOps',
+      tags: 'Angular · Full Stack · Go · GitHub Actions',
     },
     {
       co: 'Softimpact', role: 'Mobile Developer', date: 'Jan 2023 — Nov 2024', loc: 'Jdeideh',
       points: [
-        'Led migration of top news apps to Flutter — Al Jadeed and Lebanon 24 — maintaining 24/7 uptime for millions of users during national instability. Also built Fujairah TV, Aliman TV, and Ekher el Akhbar with live streaming, Google Cast & AirPlay, PiP, IMA Ads, QR Code login, and more.',
+        'Led migration of top news apps to Flutter — Al Jadeed and Lebanon 24 — maintaining 24/7 uptime for thousands of users during national instability. Also built Fujairah TV, Aliman TV, and Ekher el Akhbar with live streaming, Google Cast & AirPlay, PiP, IMA Ads, QR Code login, and more.',
         'Led Al Jadeed for tvOS in React Native and contributed to its Tizen implementation using web technologies.',
         'Developed Ian Assist (Mideast Assistance) with support tickets, live chat, claim submissions & document uploads.',
         'Rebuilt the Ticketing Box Office app with event browsing, direct booking, ticket scanning, and integrated charts.',
@@ -50,17 +52,27 @@ const DATA = {
       tags: 'Flutter · React Native · tvOS · Tizen · Live Streaming · Google Cast',
     },
     {
-      co: 'Early Career', role: 'Mobile Developer', sub: 'TheWebAddicts · Fodigi · Behind Pixel', date: 'Jan 2021 — Jan 2023', loc: 'Lebanon',
+      co: 'TheWebAddicts', role: 'Mobile Developer', date: 'Jan 2022 — Jan 2023', loc: 'Lebanon',
       points: [
-        'Architected a unified cinema booking ecosystem (POS Desktop, Kiosk, Mobile) for Iraqi Cinema; shipped Target Food, Artist and More, and USA Cab Ads with GPS tracking and analytics.',
-        'Built e-commerce apps (Urban Beirut, Beirutic) and a real-time delivery tracking app with Google Maps integration.',
+        'Architected a cinema booking ecosystem for Iraqi Cinema across 3 platforms: POS desktop, kiosk and mobile.',
+        'Built and shipped Target Food, an e-commerce grocery app in Flutter.',
+        'Created Artist & More, a Flutter ticket scanner app for event admissions.',
+        'Developed USA Cab Ads, tracking NYC cab campaigns via GPS with in-app analytics.',
       ],
-      tags: 'Flutter · E-commerce · GPS & Maps · Analytics',
+      tags: 'Flutter · E-commerce · GPS Tracking · Analytics',
+    },
+    {
+      co: 'Fodigi', role: 'Mobile & Backend Developer', date: 'Jan 2021 — Dec 2021', loc: 'Lebanon',
+      points: [
+        'Built Urban Beirut (100k+ downloads) in Flutter on the client’s WooCommerce REST API, adding a Firestore backend for in-app feature data, push notifications and Crashlytics.',
+        'Delivered Beirutic (20k+ downloads) on the same Flutter and WooCommerce stack, with custom Firebase endpoints extending core store data.',
+      ],
+      tags: 'Flutter · WooCommerce · Firebase · Backend',
     },
   ],
   projects: [
     { name: 'Al Jadeed', platforms: 'iOS · Android · tvOS',
-      desc: 'Leading Lebanese news app rebuilt in Flutter — live streaming, Google Cast & AirPlay, PiP, IMA Ads, QR Code login, and Push Notifications for millions of daily users.',
+      desc: 'Leading Lebanese news app rebuilt in Flutter — live streaming, Google Cast & AirPlay, PiP, IMA Ads, QR Code login, and Push Notifications across a 1M+ existing install base.',
       tags: 'Flutter · Live Streaming · Google Cast',
       icon: 'https://play-lh.googleusercontent.com/ReFFJhnXvO9OzTmH9VukFQzJxxgZhPD-NXBD5HL3HvJ90H7RMseOXc7LAETb0cjr3A=w120-h120',
       links: [['PLAY STORE', 'https://play.google.com/store/apps/details?id=mobi.foo.aljadeed'], ['APP STORE', 'https://apps.apple.com/us/app/al-jadeed/id548634879']] },
@@ -75,7 +87,7 @@ const DATA = {
       icon: 'https://www.google.com/s2/favicons?domain=domainagents.com&sz=128',
       links: [['VISIT SITE', 'https://domainagents.com']] },
     { name: 'Lebanon 24', platforms: 'iOS · Android',
-      desc: 'Top Lebanese digital news platform migrated to Flutter — real-time alerts, live coverage, and seamless multimedia experience for millions of readers.',
+      desc: 'Top Lebanese digital news platform migrated to Flutter — real-time alerts, live coverage, and seamless multimedia experience across a 1M+ existing install base.',
       tags: 'Flutter · Push Notifications · Live News',
       icon: 'https://play-lh.googleusercontent.com/JhR2vPoauftbRuKA5QqgbUiFk9J8Zom_ug3vT1mrLkSSFyI99tE_aUPVpgMEiRq_340=w120-h120',
       links: [['PLAY STORE', 'https://play.google.com/store/apps/details?id=mobi.foo.lebanon24iPad'], ['APP STORE', 'https://apps.apple.com/us/app/lebanon-24-%D9%84%D8%A8%D9%86%D8%A7%D9%86-24/id595926843']] },
@@ -137,7 +149,10 @@ const DATA = {
   ],
   contact: {
     line: 'Open to new opportunities, collaborations, and interesting projects. Drop me a line!',
-    email: 'sabbaghpierre@proton.me',
+    email: 'sabbaghpierre@protonmail.com',
+    phone: '+96176630992',
+    phoneHref: 'tel:+96176630992',
+    linkedin: 'https://www.linkedin.com/in/sabbaghpierre',
     github: 'https://github.com/sabbaghpierre',
   },
 };
@@ -190,8 +205,8 @@ const ROOMS = {
     exits: { w: 'plaza' },
     map: [
       '###############',
-      'RRR#RRR#RRR#RRR',
-      'H1H#H2H#H3H#H4H',
+      'RRRRRRRRRRRRRRR',
+      'H1HH2HH3HH4HH5H',
       '#p...p...p...p#',
       '#p...p...p...p#',
       'pppppppppppppp#',
@@ -269,6 +284,7 @@ const INTERACT = {
   2: { id: 'xp-1',      hint: true },
   3: { id: 'xp-2',      hint: true },
   4: { id: 'xp-3',      hint: true },
+  5: { id: 'xp-4',      hint: true },
 };
 const EXIT_ROW = 5;
 
@@ -605,6 +621,7 @@ const DIGITS = {
   2: ['111', '001', '111', '100', '111'],
   3: ['111', '001', '011', '001', '111'],
   4: ['101', '101', '111', '001', '001'],
+  5: ['111', '100', '111', '001', '111'],
 };
 
 /* ───────────────────────── TILES ───────────────────────── */
@@ -677,8 +694,8 @@ function drawBoard(x, y) {
   px(x, y, 1, TILE, P8[5]);
   px(x, y + 15, TILE, 1, P8[0]);
 }
-const ROOF_COLORS = [P8[8], P8[9], P8[11], P8[14]];
-function houseIndex(tx) { return Math.min(3, Math.floor(tx / 4)); }
+const ROOF_COLORS = [P8[8], P8[9], P8[11], P8[14], P8[12]];
+function houseIndex(tx) { return Math.min(4, Math.floor(tx / 3)); }
 function drawRoof(x, y, tx) {
   const c = ROOF_COLORS[houseIndex(tx)];
   px(x, y, TILE, TILE, c);
@@ -687,7 +704,7 @@ function drawRoof(x, y, tx) {
   const h = hash(x, y);
   px(x + (h % 12) + 1, y + 4 + ((h >> 3) % 8), 2, 1, P8[2]);
   // a chimney on the right-hand roof tile of each house
-  if (tx % 4 === 2) {
+  if (tx % 3 === 2) {
     px(x + 9, y + 2, 5, 6, P8[5]);
     px(x + 8, y + 1, 7, 2, P8[6]);
     px(x + 10, y + 3, 3, 1, P8[0]);
@@ -954,7 +971,7 @@ function drawTile(ch, tx, ty, t) {
     case 'B': drawBoard(x, y); break;
     case 'R': drawRoof(x, y, tx); break;
     case 'H': drawWall(x, y); break;
-    case '1': case '2': case '3': case '4': drawDoor(x, y, +ch); break;
+    case '1': case '2': case '3': case '4': case '5': drawDoor(x, y, +ch); break;
     case 'A': drawArcade(x, y, t); break;
     case 'M': drawMailbox(x, y, t); break;
     case 'T': drawComputer(x, y, t); break;
@@ -1787,8 +1804,10 @@ const BUILDERS = {
         <p>${esc(c.line)}</p>
         <div class="d-actions">
           <a class="d-btn d-btn-hot" href="mailto:${c.email}">✉ ${esc(c.email)}</a>
+          <a class="d-btn" href="${c.phoneHref}">☎ ${esc(c.phone)}</a>
+          <a class="d-btn" href="${c.linkedin}" target="_blank" rel="noopener noreferrer">LINKEDIN ↗</a>
           <a class="d-btn" href="${c.github}" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
-          <a class="d-btn" href="resume.pdf" download="Pierre_Sabbagh_Resume">RÉSUMÉ (PDF) ↓</a>
+          <a class="d-btn" href="resume.pdf" download="Pierre_Sabbagh_Resume.pdf">RESUME (PDF) ↓</a>
         </div>
         <p class="d-dim">BS COMPUTER SCIENCE · ARAB OPEN UNIVERSITY · 2017–2020</p>`,
     };
@@ -1879,7 +1898,7 @@ DATA.projects.forEach((p, i) => {
       <p>${esc(p.desc)}</p>
       <p class="d-tags">${esc(p.tags)}</p>
       <div class="d-actions">${
-        p.private
+        (p.private || !p.links.length)
           ? '<span class="d-btn d-btn-mute">PRIVATE CLIENT</span>'
           : p.links.map(l => `<a class="d-btn" href="${l[1]}" target="_blank" rel="noopener noreferrer">${l[0]} ↗</a>`).join('')
       }</div>`,
@@ -2012,7 +2031,7 @@ const CMDS = {
   <span class="tk">exit</span>         — Close terminal`,
 
   whoami: () =>
-`<span class="th">Pierre Sabbagh</span>  —  Senior Mobile & Web Developer
+`<span class="th">Pierre Sabbagh</span>  —  Mobile & Full-Stack Developer
   Location  :  Biaqout, Lebanon
   Focus     :  Flutter · Angular · React Native
   Status    :  <span class="tok">● Available for work</span>`,
@@ -2021,27 +2040,30 @@ const CMDS = {
 `<span class="th">About</span>
   Building performant, beautiful experiences since 2021.
   Led migration of Al Jadeed & Lebanon 24 to Flutter —
-  maintaining 24/7 uptime for <span class="tok">1M+ users</span> during national instability.
-  Currently building across mobile & web simultaneously
-  at DomainAgents and Adrea.`,
+  maintaining 24/7 uptime for <span class="tok">thousands of users</span> during national instability.
+  Currently building mobile experiences end to end at Adrea.`,
 
   skills: () =>
 `<span class="th">Stack</span>
-  Flutter · Angular · React Native · tvOS & Tizen · Go · MySQL
+  Dart · TypeScript · JavaScript · Go · Java
+  Flutter · Angular · React Native · React · Node.js
+  Gin · Bloc · tvOS & Tizen · MariaDB
 
 <span class="th">AI & DevOps</span>
-  Claude Code · MCP · Firebase · CI/CD
-  Docker · K8s · Cloudflare · App/Play Store
+  Claude Code · MCP · Firebase · GCP · SQLite
+  Docker · K8s · GitHub Actions · CI/CD · Git
+  Cloudflare · WooCommerce · App/Play Store
 
 <span class="th">Languages</span>
   Arabic (Native) · English (Professional) · French (Professional)`,
 
   experience: () =>
 `<span class="th">Work History</span>
-  <span class="tk">DomainAgents</span>   Web Developer      <span class="tok">Nov 2024 – Now</span>
   <span class="tk">Adrea</span>          Mobile Developer   <span class="tok">Jan 2025 – Now</span>
+  <span class="tk">DomainAgents</span>   Full Stack Dev     <span class="tok">Nov 2024 – Apr 2026</span>
   <span class="tk">Softimpact</span>     Mobile Developer   Jan 2023 – Nov 2024
-  <span class="tk">Early Career</span>   Mobile Developer   Jan 2021 – Jan 2023`,
+  <span class="tk">TheWebAddicts</span>  Mobile Developer   Jan 2022 – Jan 2023
+  <span class="tk">Fodigi</span>         Mobile & Backend   Jan 2021 – Dec 2021`,
 
   education: () =>
 `<span class="th">Education</span>
@@ -2051,7 +2073,7 @@ const CMDS = {
   projects: () =>
 `<span class="th">Featured Projects</span>
   <span class="tk">Al Jadeed</span>            Flutter · Live Streaming · tvOS
-  <span class="tk">Lebanon 24</span>           Flutter · Push Notifications · 1M+ users
+  <span class="tk">Lebanon 24</span>           Flutter · Push Notifications · 1M+ installs
   <span class="tk">Ekher El Akhbar</span>      Flutter · News · iOS & Android
   <span class="tk">Fujairah TV</span>          Flutter · Live TV · UAE
   <span class="tk">Aliman TV</span>            Flutter · Live Broadcast
@@ -2068,7 +2090,9 @@ const CMDS = {
 
   contact: () =>
 `<span class="th">Contact</span>
-  Email   :  <span class="tlink">sabbaghpierre@proton.me</span>
+  Phone   :  <span class="tlink">+96176630992</span>
+  Email   :  <span class="tlink">sabbaghpierre@protonmail.com</span>
+  LinkedIn:  <span class="tlink">linkedin.com/in/sabbaghpierre</span>
   GitHub  :  <span class="tlink">github.com/sabbaghpierre</span>
   Web     :  <span class="tlink">sabbaghpierre.github.io</span>`,
 
@@ -2080,7 +2104,7 @@ const CMDS = {
   resume: () => {
     setTimeout(() => {
       const a = document.createElement('a');
-      a.href = 'resume.pdf'; a.download = 'Pierre_Sabbagh_Resume';
+      a.href = 'resume.pdf'; a.download = 'Pierre_Sabbagh_Resume.pdf';
       document.body.appendChild(a); a.click(); document.body.removeChild(a);
     }, 350);
     return 'Downloading <span class="tlink">Pierre_Sabbagh_Resume.pdf</span> ...';
