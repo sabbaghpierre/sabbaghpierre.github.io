@@ -64,10 +64,10 @@ const DATA = {
     {
       co: 'Fodigi', role: 'Mobile & Backend Developer', date: 'Jan 2021 — Dec 2021', loc: 'Lebanon',
       points: [
-        'Built Urban Beirut (100k+ downloads) in Flutter on the client’s WooCommerce REST API, adding a Firestore backend for in-app feature data, push notifications and Crashlytics.',
+        'Built Urban Beirut (100k+ downloads) in Flutter on the client’s WooCommerce REST API, adding a Firestore backend for in-app feature data, push notifications, Crashlytics and the Wisp AI assistant with live product search.',
         'Delivered Beirutic (20k+ downloads) on the same Flutter and WooCommerce stack, with custom Firebase endpoints extending core store data.',
       ],
-      tags: 'Flutter · WooCommerce · Firebase · Backend',
+      tags: 'Flutter · WooCommerce · Firebase · Backend · AI',
     },
   ],
   projects: [
@@ -127,8 +127,8 @@ const DATA = {
       icon: 'https://play-lh.googleusercontent.com/P7RHfYsTNpww7P0j_FMCn9GHhlEDjTxa-LDDj-HTgW-cvkTHjJ8FY0gKZP8oI_3Fnl8=w120-h120',
       links: [['PLAY STORE', 'https://play.google.com/store/apps/details?id=com.thewebaddicts.targetfood'], ['APP STORE', 'https://apps.apple.com/lb/app/target-food/id1629391815']] },
     { name: 'Urban Beirut', platforms: 'iOS · Android',
-      desc: 'E-commerce app for purchasing customizable furniture with a seamless, user-centric shopping experience built with Flutter.',
-      tags: 'Flutter · E-commerce · Furniture',
+      desc: 'E-commerce app for purchasing customizable furniture with a seamless, user-centric shopping experience built with Flutter. Now with Wisp, an in-app AI assistant for product search and support.',
+      tags: 'Flutter · E-commerce · Furniture · AI',
       icon: 'https://play-lh.googleusercontent.com/Nk60R9EnjCX97tTtUuqVKP8A_wbKBZNHrWangkbq1wN42HxgbbPO0xndQUaIwIPj2zk=w120-h120',
       links: [['PLAY STORE', 'https://play.google.com/store/apps/details?id=com.fodigi.urbanbeirut'], ['APP STORE', 'https://apps.apple.com/us/app/urban-beirut/id1622005589']] },
     { name: 'Beirutic', platforms: 'iOS · Android',

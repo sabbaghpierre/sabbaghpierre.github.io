@@ -86,7 +86,8 @@
     },
     {
       "highlights": [
-        "Engineered Urban Beirut and Beirutic, user-centric e-commerce apps for purchasing customizable furniture & tech products, focusing on user-friendly design and seamless shopping experiences."
+        "Engineered Urban Beirut and Beirutic, user-centric e-commerce apps for purchasing customizable furniture & tech products, focusing on user-friendly design and seamless shopping experiences.",
+        "Shipped Wisp, an AI assistant for Urban Beirut with live product search."
       ],
       "company": "Fodigi",
       "position": "Mobile Developer",
@@ -122,6 +123,7 @@
     {
       "keywords": [
         "Claude Code",
+        "LLM Integration",
         "MCP",
         "Firebase",
         "CI/CD",
