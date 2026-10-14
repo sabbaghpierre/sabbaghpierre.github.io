@@ -149,7 +149,7 @@ const DATA = {
   ],
   contact: {
     line: 'Open to new opportunities, collaborations, and interesting projects. Drop me a line!',
-    email: 'sabbaghpierre@protonmail.com',
+    email: 'sabbaghpierre@proton.me',
     phone: '+96176630992',
     phoneHref: 'tel:+96176630992',
     linkedin: 'https://www.linkedin.com/in/sabbaghpierre',
@@ -2091,7 +2091,7 @@ const CMDS = {
   contact: () =>
 `<span class="th">Contact</span>
   Phone   :  <span class="tlink">+96176630992</span>
-  Email   :  <span class="tlink">sabbaghpierre@protonmail.com</span>
+  Email   :  <span class="tlink">sabbaghpierre@proton.me</span>
   LinkedIn:  <span class="tlink">linkedin.com/in/sabbaghpierre</span>
   GitHub  :  <span class="tlink">github.com/sabbaghpierre</span>
   Web     :  <span class="tlink">sabbaghpierre.github.io</span>`,
