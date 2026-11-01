@@ -4,7 +4,6 @@ set -euo pipefail
 DIR="$(cd "$(dirname "$0")" && pwd)"
 SRC="$DIR/resume_source.html"
 OUT="$DIR/resume.pdf"
-TMP="$DIR/.tmp.html"
 
 if [ -n "${CHROME:-}" ]; then :
 elif [ -x "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" ]; then
@@ -14,6 +13,13 @@ else
 fi
 [ -n "$CHROME" ] || { echo "Chrome not found. Set CHROME=/path/to/chrome" >&2; exit 1; }
 command -v python3 >/dev/null || { echo "python3 is required" >&2; exit 1; }
+command -v pdfinfo >/dev/null || { echo "pdfinfo is required (install Poppler)" >&2; exit 1; }
+
+TMP_DIR="$(mktemp -d "$DIR/.resume.XXXXXX")"
+TMP_HTML="$TMP_DIR/resume.html"
+TMP_PDF="$TMP_DIR/resume.pdf"
+CHROME_LOG="$TMP_DIR/chrome.log"
+trap 'rm -f "$TMP_HTML" "$TMP_PDF" "$CHROME_LOG"; rmdir "$TMP_DIR"' EXIT
 
 # Render $SRC into $1 with --base-size set to $2, without touching $SRC.
 render_sized() {
@@ -27,7 +33,7 @@ with open(dst, "w") as f:
 PY
 }
 
-# Persist a known-good size back into $SRC so the next build starts from it.
+# Persist the chosen size back into $SRC.
 set_size() {
   python3 - "$SRC" "$1" <<'PY'
 import re, sys
@@ -39,41 +45,22 @@ with open(path, "w") as f:
 PY
 }
 
-# Chrome stamps the wall clock into the PDF, which makes identical content
-# differ byte-for-byte. Replace it with a fixed value of the SAME length so
-# the xref offsets stay valid and rebuilds are reproducible.
-normalize_pdf() {
-  python3 - "$1" <<'PY'
-import re, sys
-path = sys.argv[1]
-with open(path, "rb") as f:
-    data = f.read()
-data = re.sub(
-    rb"/(Creation|Mod)Date \(D:\d{14}[^)]*\)",
-    lambda m: b"/" + m.group(1) + b"Date (D:20000101000000+00'00')",
-    data,
-)
-with open(path, "wb") as f:
-    f.write(data)
-PY
-}
-
-trap 'rm -f "$TMP"' EXIT
-
 for SIZE in 10.4 10.2 10.0 9.8 9.6 9.4 9.2 9.0 8.8 8.6 8.4; do
-  render_sized "$TMP" "$SIZE"
-  "$CHROME" --headless --disable-gpu --no-pdf-header-footer \
-    --print-to-pdf="$OUT" "file://$TMP" 2>/dev/null
-  normalize_pdf "$OUT"
-  PAGES=$(python3 -c "
-import re
-with open('$OUT','rb') as f:
-    data = f.read()
-m = re.findall(rb'/Count\s+(\d+)', data)
-print(int(m[-1]) if m else 0)
-")
+  render_sized "$TMP_HTML" "$SIZE"
+  rm -f "$TMP_PDF"
+  if ! "$CHROME" --headless --disable-gpu --no-pdf-header-footer \
+    --print-to-pdf="$TMP_PDF" "file://$TMP_HTML" 2>"$CHROME_LOG"; then
+    echo "Chrome failed to generate the resume PDF" >&2
+    cat "$CHROME_LOG" >&2
+    exit 1
+  fi
+  if ! PAGES=$(LC_ALL=C pdfinfo "$TMP_PDF" | awk '/^Pages:/{print $2}'); then
+    cat "$CHROME_LOG" >&2
+    exit 1
+  fi
   if [ "$PAGES" = "1" ]; then
     set_size "$SIZE"
+    mv -f "$TMP_PDF" "$OUT"
     echo "OK: single page at ${SIZE}pt"
     exit 0
   fi
